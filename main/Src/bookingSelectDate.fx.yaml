@@ -1,0 +1,128 @@
+"bookingSelectDate As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    ContentLanguage: ="de-DE"
+
+    RectQuickActionBar2_2 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    "gallery_bookingSelectDate As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        DisplayMode: =
+        Fill: =RGBA(100,00,0,0)
+        Height: =583
+        Items: =hnoTimeSlots
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(96, Self.Height - 60)
+        Width: =1336
+        WrapCount: =3
+        X: =16
+        Y: =164
+        ZIndex: =1
+
+        Title7 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                =Text(DateTimeValue(ThisItem.hnoStartTime), "hh:mm") & " - " & Text(DateTimeValue(ThisItem.hnoEndTime), "hh:mm")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        NextArrow5 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            DisplayMode: |-
+                =If(
+                    IsBlank (
+                        LookUp(
+                            hnoBookings,
+                            hnoBookingStartDateAndTime = DateTimeValue(
+                                DateAdd(
+                                    DateAdd(
+                                        DatePicker_booking.SelectedDate,
+                                        Text(
+                                            DateTimeValue(ThisItem.hnoStartTime),
+                                            "hh:"
+                                        ),
+                                        Hours
+                                    ),
+                                    Text(
+                                        DateTimeValue(ThisItem.hnoStartTime),
+                                        "mm"
+                                    ),
+                                    Minutes
+                                )
+                            ) && hnoDoctor = Text(gallery_bookingSelectDoctor.Selected.staffName & " " & gallery_bookingSelectDoctor.Selected.staffSurname)
+                        )
+                    ),
+                    Edit,
+                    Disabled
+                )
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =If(DatePicker_booking<Today(),Notify("Es können keine Termine in der Vergangenheit gebucht werden!",Error),Select(Parent);Navigate(bookingSummary);)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Visible: |+
+                =If(
+                    IsBlank (
+                        LookUp(
+                            hnoBookings,
+                            hnoBookingSlotID = Text(DatePicker_booking.SelectedDate + ThisItem.Name) && hnoDoctor = gallery_bookingSelectDoctor.Selected.staffName & " " & gallery_bookingSelectDoctor.Selected.staffSurname
+                        )
+                    ),
+                    true,
+                    false
+                )
+                
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Separator9 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+    title_bookingSelectDate As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="Termin ausmachen - Tag wählen"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    icon_back_bookingSelectDate As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =47
+        X: =16
+        Y: =18
+        ZIndex: =4
+
+    DatePicker_booking As datepicker:
+        ContentLanguage: ="de-DE"
+        Height: =44
+        InputTextPlaceholder: =If(IsBlank(Self.SelectedDate), Text(Today(), Self.Format, Self.Language))
+        Language: ='de-DE'
+        StartOfWeek: =StartOfWeek.Monday
+        StartYear: =Year(Today())
+        Width: =1336
+        X: =16
+        Y: =101
+        ZIndex: =12
+

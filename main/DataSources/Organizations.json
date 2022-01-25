@@ -1,0 +1,3290 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "organizations",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "organization",
+    "MaxGetRowsCount": 500,
+    "Name": "Organizations",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "aciwebendpointurl": "URL des ACI-Mandanten",
+      "acknowledgementtemplateid": "Bestätigungsvorlage",
+      "advancedcolumneditorenabled": "Advanced column editor enabled",
+      "advancedcolumnfilteringenabled": "Advanced column filtering enabled",
+      "advancedfilteringenabled": "Advanced filtering enabled",
+      "advancedlookupenabled": "Advanced lookup enabled",
+      "allowaddressbooksyncs": "Adressbuchsynchronisierung zulassen",
+      "allowautoresponsecreation": "Automatische Reaktionserstellung zulassen",
+      "allowautounsubscribe": "Automatische Kündigung zulassen",
+      "allowautounsubscribeacknowledgement": "Automatische Kündigungsbestätigung zulassen",
+      "allowclientmessagebarad": "Werbung in Outlook-Client-Statusleiste zulassen",
+      "allowentityonlyaudit": "Überwachung auf Entitätsebene zulassen",
+      "allowlegacyclientexperience": "Zugriff auf die alte WebClient-Benutzeroberfläche aktivieren",
+      "allowlegacydialogsembedding": "Aktivieren Sie die Einbettung bestimmter alter Dialoge in den Browser-Client der einheitlichen Oberfläche.",
+      "allowmarketingemailexecution": "Marketing-E-Mail-Ausführung zulassen",
+      "allowofflinescheduledsyncs": "Geplante Offlinesynchronisierung zulassen",
+      "allowoutlookscheduledsyncs": "Geplante Synchronisierung zulassen",
+      "allowredirectadminsettingstomodernui": "Allow Redirect Legacy Admin Settings To Modern UI",
+      "allowunresolvedpartiesonemailsend": "E-Mail-Versand an nicht aufgelöste Adressen zulassen",
+      "allowuserformmodepreference": "Benutzern die Auswahl des bevorzugten Formularmodus erlauben",
+      "allowusershidingsystemviews": "Allow users hiding system views",
+      "allowusersseeappdownloadmessage": "Dient zum Zulassen der Anzeige von Benachrichtigungsleisten für Tablet-Anwendungen in einem Browser.",
+      "allowwebexcelexport": "Excel-Export zulassen",
+      "amdesignator": "AM-Kennzeichner",
+      "appdesignerexperienceenabled": "App-Designerumgebung für diese Organisation aktivieren",
+      "appointmentricheditorexperience": "Enable Rich Editing Experience for Appointment",
+      "auditretentionperiod": "Einstellungen für den Überwachungsaufbewahrungszeitraum (auditretentionperiod)",
+      "auditretentionperiodv2": "Einstellungen für den Überwachungsaufbewahrungszeitraum (auditretentionperiodv2)",
+      "autoapplydefaultoncasecreate": "Standardberechtigung bei der Anfrageerstellung automatisch anwenden",
+      "autoapplydefaultoncaseupdate": "Standardberechtigung bei der Anfrageaktualisierung automatisch anwenden",
+      "autoapplysla": "Ist SLA automatisch anwenden nach manueller Überschreibung",
+      "azureschedulerjobcollectionname": "Nur zur internen Verwendung.",
+      "basecurrencyid": "Währung",
+      "basecurrencyprecision": "Genauigkeit der Basiswährung",
+      "basecurrencysymbol": "Basiswährungssymbol",
+      "bingmapsapikey": "API-Schlüssel für Bing\u00A0Maps",
+      "blockedattachments": "Anlagen blockieren",
+      "bounddashboarddefaultcardexpanded": "Karten in erweitertem Status für interaktives Dashboard anzeigen",
+      "bulkoperationprefix": "Präfix für Massenvorgänge",
+      "businesscardoptions": "Neue BusinessCardOptions aktivieren",
+      "businessclosurecalendarid": "Betriebsferienkalender",
+      "calendartype": "Kalendertyp",
+      "campaignprefix": "Präfix für Kampagnen",
+      "canoptoutnewsearchexperience": "Kann die Okt. 2020-Suche deaktivieren",
+      "cascadestatusupdate": "Statusupdate kaskadieren",
+      "caseprefix": "Präfix für Anfragen",
+      "categoryprefix": "Kategoriepräfix",
+      "clientfeatureset": "Client-Funtionen-Set",
+      "contentsecuritypolicyconfiguration": "Konfigurieren der Sicherheitsrichtlinie für Inhalte",
+      "contractprefix": "Präfix für Verträge",
+      "copresencerefreshrate": "CopresenceRefreshRate",
+      "cortanaproactiveexperienceenabled": "Flussprozesse der proaktiven Cortana-Umgebung für diese Organisation aktivieren",
+      "createdby": "Erstellt von",
+      "createdon": "Erstellt am",
+      "createdonbehalfby": "Erstellt von (Stellvertreter)",
+      "createproductswithoutparentinactivestate": "\"Aktiv\" als Anfangszustand von Produkten aktivieren",
+      "currencydecimalprecision": "Währungsdezimalstellen",
+      "currencydisplayoption": "Währungen anzeigen mit",
+      "currencyformatcode": "Währungsformatcode",
+      "currencysymbol": "Währungssymbol",
+      "currentimportsequencenumber": "Aktuelle Importsequenznummer",
+      "currentparsedtablenumber": "Aktuelle analysierte Tabellennummer",
+      "customcontrol_organization": "Benutzerdefinierte Steuerelemente",
+      "customcontroldefaultconfig_organization": "Standardkonfigurationen des benutzerdefinierten Steuerelements",
+      "customcontrolresource_organization": "Ressourcen des benutzerdefinierten Steuerelements",
+      "dateformatcode": "Datumsformatcode",
+      "dateformatstring": "Datumsformatzeichenfolge",
+      "dateseparator": "Datumstrennzeichen",
+      "dayssincerecordlastmodifiedmaxvalue": "Maximaler Wert von \"Tage seit der letzten Änderung des Datensatzes\"",
+      "decimalsymbol": "Dezimaltrennzeichen",
+      "defaultcountrycode": "Standardländercode",
+      "defaultcrmcustomname": "Name der Standard-App",
+      "defaultemailserverprofileid": "E-Mail-Serverprofil",
+      "defaultemailsettings": "Standard-E-Mail-Einstellungen",
+      "defaultrecurrenceendrangetype": "Serien-St.-Endbereichsdatumstyp",
+      "defaultthemedata": "Standarddesigndaten",
+      "delegatedadminuserid": "Stellvertretender Administrator",
+      "disabledreason": "Grund für Deaktivierung",
+      "disablesocialcare": "Ist Social Care deaktiviert",
+      "discountcalculationmethod": "Rabattberechnungsmethode",
+      "displaynavigationtour": "Navigationstour anzeigen",
+      "emailconnectionchannel": "E-Mail-Verbindungskanal",
+      "emailcorrelationenabled": "E-Mail-Korrelation verwenden",
+      "emailsendpollingperiod": "Abruffrequenz für E-Mail-Versand",
+      "enableasyncmergeapiforuci": "Asynchronous merge enabled for UCI",
+      "enablebingmapsintegration": "Integration in Bing Maps aktivieren",
+      "enableimmersiveskypeintegration": "Integration mit immersivem Skype aktivieren",
+      "enablelivepersonacarduci": "Gibt an, ob der Benutzer die Live-Rollenkarte in UCI aktiviert oder deaktiviert hat.",
+      "enablelivepersoncardintegrationinoffice": "Gibt an, ob der Benutzer die LivePersonCardIntegration in Office aktiviert oder deaktiviert hat.",
+      "enablelpauthoring": "Lernpfaderstellung aktivieren",
+      "enablemakerswitchtoclassic": "Switch Maker Portal to Classic",
+      "enablemicrosoftflowintegration": "Integration in Microsoft Flow aktivieren",
+      "enablepricingoncreate": "Preisberechnung bei Erstellung aktivieren",
+      "enablesmartmatching": "Intelligente Übereinstimmung aktivieren",
+      "enableunifiedinterfaceshellrefresh": "Siteübersicht und Befehls-Update aktivieren",
+      "enforcereadonlyplugins": "Organisationseinstellung zum Erzwingen schreibgeschützter Plug-Ins.",
+      "entityimage": "Bild der Entität",
+      "entityimageid": "Bild-ID der Entität",
+      "expirechangetrackingindays": "Ablauf von Datensätzen der Änderungsnachverfolgung in Tagen",
+      "expiresubscriptionsindays": "Abonnementablauf (in Tagen)",
+      "externalbaseurl": "Externe Basis-URL",
+      "externalpartycorrelationkeys": "Korrelationsschlüssel der ExternalPartyEnabled-Entitäten",
+      "externalpartyentitysettings": "Einstellungen der ExternalPartyEnabled-Entitäten. Nur zur internen Verwendung.",
+      "featureset": "Funktionen",
+      "fiscalcalendarstart": "Beginn des Geschäftskalenders",
+      "fiscalperiodformat": "Format der Buchhaltungsperiode",
+      "fiscalperiodformatperiod": "Format für Buchhaltungsperiode",
+      "fiscalperiodtype": "Typ der Buchhaltungsperiode",
+      "fiscalyeardisplaycode": "Anzeige des Geschäftsjahrs",
+      "fiscalyearformat": "Format für Geschäftsjahr (fiscalyearformat)",
+      "fiscalyearformatprefix": "Präfix für Geschäftsjahr",
+      "fiscalyearformatsuffix": "Suffix für Geschäftsjahr",
+      "fiscalyearformatyear": "Format für Geschäftsjahr (fiscalyearformatyear)",
+      "fiscalyearperiodconnect": "Geschäftsjahr-Periodenconnector",
+      "fullnameconventioncode": "Reihenfolge für Anzeige des vollständigen Namens",
+      "futureexpansionwindow": "Fenster für Erweiterung (zukünftig)",
+      "generatealertsforerrors": "Warnungen für Fehler generieren",
+      "generatealertsforinformation": "Warnungen für Informationen generieren",
+      "generatealertsforwarnings": "Warnungen für Warnungen generieren",
+      "getstartedpanecontentenabled": "Ist Bereich \"Erste Schritte\" für Inhalte aktiviert",
+      "globalappendurlparametersenabled": "Ist für AppendUrl-Parameter aktiviert",
+      "globalhelpurl": "Globale Hilfe-URL.",
+      "globalhelpurlenabled": "Ist für anpassbare globale Hilfe aktiviert",
+      "goalrollupexpirytime": "Rollupverfallszeit",
+      "goalrollupfrequency": "Frequenz der automatischen Rollups für das Ziel",
+      "grantaccesstonetworkservice": "Zugriff auf Netzwerkdienst gewähren",
+      "hashdeltasubjectcount": "Hashdelta - Betreffanzahl",
+      "hashfilterkeywords": "Hashfilter für Schlüsselwörter",
+      "hashmaxcount": "Maximale Anzahl für Hash",
+      "hashminaddresscount": "Minimale Anzahl von Adressen für Hash",
+      "highcontrastthemedata": "Designdaten mit hohem Kontrast",
+      "ignoreinternalemail": "Interne E-Mail ignorieren",
+      "improvesearchloggingenabled": "Suchabfragedaten teilen",
+      "inactivitytimeoutenabled": "Inaktivitätstimeout aktiviert",
+      "inactivitytimeoutinmins": "Inaktivitätstimeout in Minuten",
+      "inactivitytimeoutreminderinmins": "Inaktivitätstimeouterinnerung in Minuten",
+      "incomingemailexchangeemailretrievalbatchsize": "Exchange-Abfragebatchgröße für E-Mails",
+      "initialversion": "Ursprüngliche Version",
+      "integrationuserid": "Integrationsbenutzer",
+      "invoiceprefix": "Rechnungspräfix",
+      "isactioncardenabled": "Aktionskarte für diese Organisation aktivieren",
+      "isactionsupportfeatureenabled": "Aktionsunterstützungsfunktion aktiviert",
+      "isactivityanalysisenabled": "Beziehungsanalyse für diese Organisation aktivieren",
+      "isallmoneydecimal": "Festlegen, wenn alle Geldattribute in Dezimalzahlen konvertiert werden",
+      "isappmode": "Ist Anwendungsmodus aktiviert",
+      "isappointmentattachmentsyncenabled": "Anlagensynchronisierung aktiviert?",
+      "isassignedtaskssyncenabled": "Synchronisierung zugewiesener Aufgaben aktiviert?",
+      "isauditenabled": "Ist Überwachung aktiviert",
+      "isautodatacaptureenabled": "Automatische Datenerfassung für diese Organisation aktivieren",
+      "isautodatacapturev2enabled": "„Automatisch erfassen“ V2 für diese Organisation aktivieren",
+      "isautosaveenabled": "Automatisches Speichern aktiviert",
+      "isbpfentitycustomizationfeatureenabled": "BPF-Entitätsanpassungsfunktion aktiviert",
+      "iscollaborationexperienceenabled": "IsCollaborationExperienceEnabled",
+      "isconflictdetectionenabledformobileclient": "Konflikterkennung für mobilen Client aktiviert",
+      "iscontactmailingaddresssyncenabled": "Postanschriftsynchronisierung aktiviert?",
+      "iscontentsecuritypolicyenabled": "Sicherheitsrichtlinie für Inhalte für diese Organisation aktivieren",
+      "iscontextualemailenabled": "Gibt an, ob die Kontext-E-Mail-Umgebung für die Organisation aktiviert ist.",
+      "iscontextualhelpenabled": "Aktiviert Kontexthilfe in UCI",
+      "iscustomcontrolsincanvasappsenabled": "Aktivieren Sie „Benutzerdefinierte Steuerelemente” in der PowerApps-Canvasfunktion für diese Organisation.",
+      "isdefaultcountrycodecheckenabled": "Ländercodeauswahl aktivieren oder deaktivieren",
+      "isdelegateaccessenabled": "Ist Stellvertretungszugriff aktiviert?",
+      "isdelveactionhubintegrationenabled": "Aktivitätshub für diese Organisation aktivieren",
+      "isdisabled": "Ist Organisation deaktiviert",
+      "isduplicatedetectionenabled": "Ist Duplikaterkennung aktiviert",
+      "isduplicatedetectionenabledforimport": "Ist Duplikaterkennung für Import aktiviert",
+      "isduplicatedetectionenabledforofflinesync": "Ist Duplikaterkennung für Offlinesynchronisierung aktiviert",
+      "isduplicatedetectionenabledforonlinecreateupdate": "Ist Duplikaterkennung für Onlineerstellung/-update aktiviert",
+      "isemailmonitoringallowed": "Das Nachverfolgen der Empfängeraktivität für gesendete E-Mails zulassen",
+      "isemailserverprofilecontentfilteringenabled": "Ist die Inhaltsfilterung für das E-Mail-Serverprofil aktiviert?",
+      "isenabledforallroles": "Optionssatzwerte für isenabledforallroles",
+      "isexternalfilestorageenabled": "Externe Dateispeicherung aktivieren",
+      "isexternalsearchindexenabled": "Externe Suchdatensynchronisierung aktivieren",
+      "isfiscalperiodmonthbased": "Ist Buchhaltungsperiode monatlich",
+      "isfolderautocreatedonsp": "Ordner automatisch erstellen",
+      "isfolderbasedtrackingenabled": "Ist die ordnerbasierte Nachverfolgung aktiviert?",
+      "isfulltextsearchenabled": "Volltextsuche für Schnellsuche aktivieren",
+      "isgeospatialazuremapsintegrationenabled": "Aktivieren Sie die räumliche Azure Maps-Integration.",
+      "ishierarchicalsecuritymodelenabled": "Hierarchisches Sicherheitsmodell aktivieren",
+      "isluisenabledford365bot": "LUIS-Zustimmung für Dynamics 365-Robot",
+      "ismailboxforcedunlockingenabled": "Ist für erzwungenes Entsperren des Postfachs aktiviert",
+      "ismailboxinactivebackoffenabled": "Ist Postfach-Keep-Alive aktiviert",
+      "ismanualsalesforecastingenabled": "Funktion Manual Sales Forecasting für diese Organisation aktivieren",
+      "ismobileclientondemandsyncenabled": "Bedarfsgesteuerte Synchronisierung für den mobilen Client ist aktiviert.",
+      "ismobileofflineenabled": "MobileOffline für diese Organisation aktivieren",
+      "ismodeldrivenappsinmsteamsenabled": "Einbettung von Modell-Apps in Microsoft Teams aktivieren",
+      "ismsteamscollaborationenabled": "Microsoft Teams-Zusammenarbeit für diese Organisation aktivieren",
+      "ismsteamsenabled": "Microsoft Teams-Integration aktivieren",
+      "ismsteamssettingchangedbyuser": "Microsoft Teams-Integration wurde vom Benutzer geändert",
+      "ismsteamsusersyncenabled": "Microsoft Teams-Benutzersynchronisierung für diese Organisation aktivieren",
+      "isnewaddproductexperienceenabled": "Gibt an, ob die neue Umgebung zum Hinzufügen von Produkten im Verkaufschancenformular aktiviert ist",
+      "isnotesanalysisenabled": "Hinweisanalyse für diese Organisation aktivieren",
+      "isofficegraphenabled": "OfficeGraph für diese Organisation aktivieren",
+      "isonedriveenabled": "OneDrive für diese Organisation aktivieren",
+      "ispaienabled": "PAI-Funktion für diese Organisation aktivieren",
+      "ispdfgenerationenabled": "Funktion zur PDF-Erstellung für diese Organisation aktivieren",
+      "isplaybookenabled": "Playbook-Funktion für diese Organisation aktivieren",
+      "ispresenceenabled": "Präsenz aktiviert",
+      "ispreviewenabledforactioncard": "Feature Vorschau der Aktionskarte für diese Organisation aktivieren",
+      "ispreviewforautocaptureenabled": "Automatische Datenerfassung für diese Organisation in den Vorschaueinstellungen aktivieren",
+      "ispreviewforemailmonitoringallowed": "Vorschau für die E-Mail-Überwachung zulassen",
+      "ispricelistmandatory": "Gibt an, ob PriceList zum Hinzufügen von vorhandenen Produkten zu Vertriebsentitäten erforderlich ist",
+      "isquickcreateenabledforopportunityclose": "Aktivieren Sie das Schnellerstellungsformular für die Funktion zum Abschluss von Verkaufschancen für diese Organisation.",
+      "isreadauditenabled": "Ist Leseüberwachung aktiviert",
+      "isrelationshipinsightsenabled": "Relationship Insights für diese Organisation aktivieren",
+      "isresourcebookingexchangesyncenabled": "Synchronisierung der Ressourcenbuchung aktiviert",
+      "isrichtextnotesenabled": "Gibt an, ob der Rich-Text-Editor für die Notizenumgebung für diese Organisation aktiviert ist.",
+      "issalesassistantenabled": "Mobile Sales Assistant-App aktivieren",
+      "issharinginorgallowed": "IsSharingInOrgAllowed",
+      "issopintegrationenabled": "Ist Vertriebsauftragsintegration aktiviert",
+      "istextwrapenabled": "Textumbruch aktivieren",
+      "isuseraccessauditenabled": "Ist für die Überwachung des Benutzerzugriffs aktiviert",
+      "iswriteinproductsallowed": "Gibt an, ob manuell einzutragende Produkte zu Verkaufschance/Angebot/Auftrag/Rechnung hinzugefügt werden können oder nicht",
+      "kaprefix": "Wissensartikelpräfix",
+      "kbprefix": "Artikelpräfix",
+      "kmsettings": "Einstellungen für das Wissensmanagement",
+      "languagecode": "Sprache",
+      "languagelocale_organization": "Sprachen",
+      "lk_dataperformance_organizationid": "Datenleistungserfassung",
+      "lk_documenttemplatebase_organization": "Dokumentvorlagen",
+      "lk_fieldsecurityprofile_organizationid": "Feldsicherheitsprofile",
+      "lk_principalobjectattributeaccess_organizationid": "Sicherer Feldzugriff",
+      "localeid": "Gebietsschema",
+      "longdateformatcode": "Langes Datumsformat",
+      "lookupcharactercountbeforeresolve": "Mindestanzahl der Zeichen vor dem Suchen der Vorschläge in der Suche",
+      "lookupresolvedelayms": "Minimale Verzögerung (in Millisekunden) für die Debouncing-Eingabe des Suchsteuerelements",
+      "mailboxintermittentissueminrange": "Unterer Schwellenwert für zeitweiliges Postfachproblem",
+      "mailboxpermanentissueminrange": "Unterer Schwellenwert für dauerhaftes Postfachproblem",
+      "maxactionstepsinbpf": "Maximale Anzahl der Aktionsschritte in einem BPF",
+      "maxallowedpendingrollupjobcount": "MaxAllowedPendingRollupJobCount",
+      "maxallowedpendingrollupjobpercentage": "MaxAllowedPendingRollupJobPercentage",
+      "maxappointmentdurationdays": "Max. Termindauer",
+      "maxconditionsformobileofflinefilters": "Maximal zulässige Anzahl von Bedingungen für mobile Offlinefilter",
+      "maxdepthforhierarchicalsecuritymodel": "Maximal zulässige Tiefe für die Hierarchiesicherheitsverteilung.",
+      "maxfolderbasedtrackingmappings": "Max. Zuordnungen für ordnerbasierte Nachverfolgung",
+      "maximumactivebusinessprocessflowsallowedperentity": "Maximal aktive Geschäftsprozessflüsse pro Entität",
+      "maximumdynamicpropertiesallowed": "Beschränkung der Produkteigenschaftenelemente",
+      "maximumentitieswithactivesla": "Maximal zulässige Anzahl aktiver SLA pro Entität online",
+      "maximumslakpiperentitywithactivesla": "Maximal zulässige Anzahl aktiver SLA-KPI pro Entität online",
+      "maximumtrackingnumber": "Max. Nachverfolgungsnummer",
+      "maxproductsinbundle": "Begrenzung der Paketelemente",
+      "maxrecordsforexporttoexcel": "Max. Datensätze für Excel-Export",
+      "maxrecordsforlookupfilters": "Max. Datensätze für Filterauswahl",
+      "maxrollupfieldsperentity": "MaxRollupFieldsPerEntity",
+      "maxrollupfieldsperorg": "MaxRollupFieldsPerOrg",
+      "maxslaitemspersla": "Max. SLA-Elemente pro SLA",
+      "maxsupportedinternetexplorerversion": "Maximal unterstützte IE-Version",
+      "maxuploadfilesize": "Max. Dateigröße für Uploads",
+      "maxverboseloggingmailbox": "Maximale Anzahl an Postfächern, die für ausführliche Protokolle aktiviert werden können",
+      "maxverboseloggingsynccycles": "Maximale Anzahl an Synchronisierungszyklen, für die ausführliche Protokolle standardmäßig aktiviert sind",
+      "microsoftflowenvironment": "(Veraltet) Umgebung, die für die Integration in Microsoft Flow ausgewählt ist",
+      "minaddressbooksyncinterval": "Mindestfrequenz für Adressensynchronisierung",
+      "minofflinesyncinterval": "Mindestfrequenz für Offlinesynchronisierung",
+      "minoutlooksyncinterval": "Mindestfrequenz für Synchronisierung",
+      "mobileofflineminlicenseprod": "Mindestanzahl der erforderlichen Benutzerlizenzen für Mobile Offline-Service nach Produktions-/Vorschauorganisation",
+      "mobileofflineminlicensetrial": "Mindestanzahl der erforderlichen Benutzerlizenzen für Mobile Offline-Service nach Testorganisation",
+      "mobileofflinesyncinterval": "Synchronisierungsintervall für Mobile Offline.",
+      "modernadvancedfindfiltering": "Modern advanced find filtering",
+      "modifiedby": "Geändert von",
+      "modifiedon": "Geändert am",
+      "modifiedonbehalfby": "Geändert von (Stellvertreter)",
+      "name": "Organisationsname",
+      "negativecurrencyformatcode": "Format für negative Beträge",
+      "negativeformatcode": "Negativformat",
+      "newsearchexperienceenabled": "Okt. 2020-Suche aktiviert",
+      "nexttrackingnumber": "Nächste Nachverfolgungsnummer",
+      "notifymailboxownerofemailserverlevelalerts": "Postfachbesitzer über Warnungen auf E-Mail-Server-Ebene benachrichtigen",
+      "numberformat": "Zahlenformat",
+      "numbergroupformat": "Zahlengruppierungsformat",
+      "numberseparator": "Zahlentrennzeichen",
+      "officeappsautodeploymentenabled": "Automatische Office-App-Bereitstellung für diese Organisation aktivieren",
+      "officegraphdelveurl": "Die URL zum Öffnen der genaueren Untersuchung",
+      "oobpricecalculationenabled": "OOB-Preisberechnung aktivieren",
+      "orderprefix": "Auftragspräfix",
+      "organization_aciviewmapper": "ACIViewMappers",
+      "organization_adx_bpf_c2857b638fa7473d8e2f112c232cebd8": "Kennwortänderung für den Portalkontakt",
+      "organization_adx_entityform": "Basisformulare",
+      "organization_adx_entityformmetadata": "Basisformularmetadaten",
+      "organization_adx_entitylist": "Listen",
+      "organization_adx_entitypermission": "Tabellenberechtigungen",
+      "organization_adx_externalidentity": "Externe Identitäten",
+      "organization_adx_webformmetadata": "Erweiterte Formularmetadaten",
+      "organization_adx_webformsession": "Erweiterte Formularsitzungen",
+      "organization_adx_webformstep": "Erweiterte Formularschritte",
+      "organization_adx_webnotificationentity": "Webbenachrichtigungsentitäten",
+      "organization_adx_websitebinding": "Websitebindungen",
+      "organization_adx_webtemplate": "Webvorlagen",
+      "organization_appaction": "App-Aktionen",
+      "organization_appconfig": "App-Konfiguration",
+      "organization_appconfiginstance": "App-Konfigurationsinstanz",
+      "organization_appconfigmaster": "App-Konfigurationsmaster",
+      "organization_appmodule": "Modellgesteuerte Apps",
+      "Organization_AsyncOperations": "Systemaufträge",
+      "Organization_BulkDeleteFailures": "Massenlöschungsfehler",
+      "organization_business_unit_news_articles": "Ankündigungen",
+      "organization_business_units": "Unternehmenseinheiten",
+      "organization_catalog": "Catalogs",
+      "organization_catalogassignment": "Catalog Assignments",
+      "organization_complexcontrols": "Komplexe Konfigurationen",
+      "organization_connection_roles": "Verbindungsrollen",
+      "organization_custom_displaystrings": "Anzeigezeichenfolgen",
+      "organization_datalakeworkspace": "Data Lake Workspaces",
+      "organization_datalakeworkspacepermission": "Data Lake Workspace Permissions",
+      "organization_emailserverprofile": "E-Mail-Serverprofile",
+      "organization_entityanalyticsconfig": "Entitätsanalysekonfiguration",
+      "organization_entitydataprovider": "Virtuelle Entitätsdatenanbieter",
+      "organization_expiredprocess": "Abgelaufener Prozess",
+      "organization_importjob": "Importaufträge",
+      "organization_mailbox": "Postfächer",
+      "Organization_MailboxTrackingFolder": "Automatisch nachverfolgte Postfachordner",
+      "organization_msdyn_federatedarticleincident": "Wissensverbundartikel-Vorfälle",
+      "organization_msdyn_helppage": "Hilfeseiten",
+      "organization_msdyn_kmpersonalizationsetting": "Wissenspersonalisierungen",
+      "organization_msdyn_solutionhealthruleset": "Regelsätze für die Lösungsintegrität",
+      "organization_msdyn_tour": "Touren",
+      "organization_navigationsetting": "Navigationseinstellungen",
+      "organization_new_bpf_d69d738cc4d84e2f9930255d396bdf5f": "Idea to Project Business Process",
+      "organization_newprocess": "Neuer Prozess",
+      "organization_officegraphdocument": "Office Graph-Dokumente",
+      "organization_organizationdatasyncsubscription": "OrganizationDataSyncSubscriptions",
+      "organization_organizationdatasyncsubscriptionentity": "OrganizationDataSyncSubscriptionEntities",
+      "organization_package": "Packages",
+      "organization_pluginassembly": "Plug-In-Assemblys",
+      "organization_pluginpackage": "Plugin Packages",
+      "organization_plugintype": "Plug-In-Typen",
+      "organization_plugintypestatistic": "Plug-In-Typstatistiken",
+      "organization_position": "Positionen",
+      "organization_post": "Nachrichten",
+      "organization_PostComment": "Kommentare",
+      "organization_postlike": "\"Gefällt mir\"-Sammlung",
+      "organization_privilegesremovalsetting": "Privileges Removal Settings",
+      "organization_publisher": "Herausgeber",
+      "organization_queueitems": "Warteschlangenelemente",
+      "organization_queues": "Warteschlangen",
+      "organization_recommendeddocument": "Dokumentvorschläge",
+      "organization_relationshipattribute": "Beziehungsattribute",
+      "organization_roles": "Sicherheitsrollen",
+      "organization_sample_challengemanagementprocess": "Challenge Management Process",
+      "organization_saved_queries": "Ansichten",
+      "organization_saved_query_visualizations": "Systemdiagramme",
+      "organization_sdkmessage": "SDK-Nachrichten",
+      "organization_sdkmessagefilter": "SDK-Nachrichtenfilter",
+      "organization_sdkmessageprocessingstep": "SDK-Nachrichtenverarbeitungsschritte",
+      "organization_sdkmessageprocessingstepimage": "Images für den SDK-Nachrichtenverarbeitungsschritt",
+      "organization_sdkmessageprocessingstepsecureconfig": "Sichere Konfigurationen des SDK-Nachrichtenverarbeitungsschritts",
+      "organization_serviceendpoint": "Dienstendpunkte",
+      "organization_sitemap": "Siteübersichten",
+      "organization_solution": "Lösungen",
+      "organization_solutioncomponentattributeconfiguration": "Attributkonfigurationen für die Lösungskomponente",
+      "organization_solutioncomponentconfiguration": "Lösungskomponentenkonfigurationen",
+      "organization_solutioncomponentrelationshipconfiguration": "Beziehungskonfigurationen für die Lösungskomponente",
+      "Organization_SyncErrors": "Synchronisierungsfehler",
+      "organization_system_users": "Benutzer",
+      "organization_systemforms": "Systemformulare",
+      "organization_teammobileofflineprofilemembership": "TeamMobileOfflineProfileMemberships",
+      "organization_teams": "Teams",
+      "organization_theme": "Designs",
+      "organization_tracelog": "Ablaufverfolgungen",
+      "organization_transactioncurrencies": "Währungen",
+      "organization_translationprocess": "Übersetzungsprozess",
+      "organization_usermobileofflineprofilemembership": "UserMobileOfflineProfileMemberships",
+      "organization_virtualentitymetadata": "Virtual Entity  Metadatas",
+      "organization_webwizard": "Web-Assistenten",
+      "organizationid": "Organisation",
+      "organizationstate": "Organisationsstatus",
+      "orgdborgsettings": "Organisationseinstellungen der Organisationsdatenbank",
+      "orginsightsenabled": "OrgInsights für diese Organisation aktivieren",
+      "paipreviewscenarioenabled": "Vorschauversionsfunktion für diese Organisation anzeigen",
+      "parsedtablecolumnprefix": "Präfix für analysierte Tabellenspalten",
+      "parsedtableprefix": "Präfix für analysierte Tabellen",
+      "pastexpansionwindow": "Fenster für Erweiterungen in der Vergangenheit",
+      "pcfdatasetgridenabled": "Enable modern grids in model-driven apps",
+      "picture": "Bild",
+      "pinpointlanguagecode": "PinpointLanguageCode",
+      "plugintracelogsetting": "Plug-In-Ablaufverfolgungsprotokoll-Einstellung",
+      "pmdesignator": "PM-Kennzeichner",
+      "postmessagewhitelistdomains": "Nur zur internen Verwendung (postmessagewhitelistdomains)",
+      "powerbifeatureenabled": "Power\u00A0BI-Feature für diese Organisation aktivieren",
+      "pricingdecimalprecision": "Preisdezimalstellen",
+      "privacystatementurl": "URL der Datenschutzbestimmungen",
+      "privilegeusergroupid": "Berechtigungsbenutzergruppe",
+      "privreportinggroupid": "Berechtigungsberichterstattungsgruppe",
+      "privreportinggroupname": "Name der Berechtigungsberichterstattungsgruppe",
+      "productrecommendationsenabled": "Produktempfehlungen für diese Organisation aktivieren",
+      "qualifyleadadditionaloptions": "Neue Umgebung „Lead qualifizieren“ mit Konfigurations-MDD aktivieren",
+      "quickactiontoopenrecordsinsidepaneenabled": "Enable quick actions to open records in search side pane",
+      "quickfindrecordlimitenabled": "Grenzwert für Schnellsuche-Datensätze aktiviert",
+      "quoteprefix": "Angebotspräfix",
+      "recalculatesla": "Gibt an, ob die SLA-Neuberechnung für die Organisation aktiviert wurde.",
+      "recurrencedefaultnumberofoccurrences": "Standardanzahl von Vorkommen für Serien",
+      "recurrenceexpansionjobbatchinterval": "Batchintervall für Serienerweiterungsaufträge",
+      "recurrenceexpansionjobbatchsize": "Batchgröße von Serienerweiterungsaufträgen bei Bedarf",
+      "recurrenceexpansionsynchcreatemax": "Erstellung von Serienerweiterungssynchronisierung (Maximum)",
+      "releasewavename": "Release Wave",
+      "relevancesearchenabledbyplatform": "Relevance search enabled automatically by Dataverse",
+      "relevancesearchmodifiedon": "RelevanceSearchModifiedOnDate",
+      "rendersecureiframeforemail": "Sicheren Frame für E-Mail anzeigen",
+      "reportinggroupid": "Berichterstattungsgruppe",
+      "reportinggroupname": "Name der Berichterstattungsgruppe",
+      "reportscripterrors": "Skriptfehler melden",
+      "requireapprovalforqueueemail": "Ist Genehmigung für Warteschlangen-E-Mail erforderlich",
+      "requireapprovalforuseremail": "Ist Genehmigung für Benutzer-E-Mail erforderlich",
+      "resolvesimilarunresolvedemailaddress": "Verwenden Sie dieselbe E-Mail-Adresse für alle nicht aufgelösten Treffer, wenn Sie für einen manuell auflösen",
+      "restrictstatusupdate": "Statusupdate einschränken",
+      "rierrorstatus": "Fehlerstatus bei der Relationship Insights-Bereitstellung",
+      "sampledataimportid": "Beispieldatenimport",
+      "schemanameprefix": "Anpassungsnamenpräfix",
+      "sendbulkemailinuci": "Massen-E-Mail in UCI senden",
+      "servestaticresourcesfromazurecdn": "Statische Inhalte aus CDN bereitstellen",
+      "sessionrecordingenabled": "Enable the session recording feature",
+      "sessiontimeoutenabled": "Sitzungstimeout aktiviert",
+      "sessiontimeoutinmins": "Sitzungstimeout in Minuten",
+      "sessiontimeoutreminderinmins": "Sitzungstimeouterinnerung in Minuten",
+      "sharepointdeploymenttype": "SharePoint-Bereitstellungstyp auswählen",
+      "sharetopreviousowneronassign": "Bei Zuweisung für bisherigen Besitzer freigeben",
+      "showkbarticledeprecationnotification": "Benachrichtigung über einen veralteten KBArticle dem Benutzer anzeigen",
+      "showweeknumber": "Wochennummer anzeigen",
+      "signupoutlookdownloadfwlink": "CRMForOutlookDownloadURL",
+      "slapausestates": "SLA-Pausenstatus",
+      "socialinsightsenabled": "Erkenntnisse aus sozialen Medien aktiviert",
+      "socialinsightsinstance": "Erkenntnisse aus sozialen Medien-Instanzbezeichner",
+      "socialinsightstermsaccepted": "Erkenntnisse aus sozialen Medien-Nutzungsbedingungen",
+      "sortid": "Sortieren",
+      "sqlaccessgroupid": "SQL-Zugriffsgruppe",
+      "sqlaccessgroupname": "Name der SQL-Zugriffsgruppe",
+      "sqmenabled": "Ist SQM aktiviert",
+      "supportuserid": "Supportbenutzer",
+      "suppresssla": "Ist SLA unterdrückt?",
+      "syncbulkoperationbatchsize": "Anzahl der Datensätze, die pro Vorgang beim Anhalten/Wiederaufnehmen/Abbrechen der Massensynchronisierung aktualisiert werden sollen",
+      "syncbulkoperationmaxlimit": "Maximale Anzahl der Datensätze, die in der Datenbank beim Anhalten/Wiederaufnehmen/Abbrechen der Synchronisierung aktualisiert werden sollen",
+      "syncoptinselection": "Framework zur Synchronisierung von Dynamics 365 und Azure für diese Organisation aktivieren.",
+      "syncoptinselectionstatus": "Status des Aktivierungs- oder Deaktivierungsvorgangs für die Synchronisierung von Dynamics 365 und Azure.",
+      "systemuserid": "Systembenutzer",
+      "tagmaxaggressivecycles": "Max. Zyklen für automatische Kennzeichnung",
+      "tagpollingperiod": "Intervall für automatische Kennzeichnung",
+      "taskbasedflowenabled": "Aufgabenflussprozesse für diese Organisation aktivieren",
+      "textanalyticsenabled": "Textanalyse für diese Organisation aktivieren",
+      "timeformatcode": "Zeitformatcode",
+      "timeformatstring": "Zeitformat-Zeichenfolge",
+      "timeseparator": "Zeittrennzeichen",
+      "timezoneruleversionnumber": "Versionsnummer der Zeitzonenregel",
+      "tokenexpiry": "Tokenablaufdauer",
+      "tracelogmaximumageindays": "Tracelog-Datensatz maximales Alter in Tagen",
+      "trackingprefix": "Nachverfolgungspräfix",
+      "trackingtokenidbase": "Nachverfolgungstoken-Basis",
+      "trackingtokeniddigits": "Nachverfolgungstoken-Stellen",
+      "uniquespecifierlength": "Eindeutige Zeichenfolgenlänge",
+      "unresolveemailaddressifmultiplematch": "Die Felder \"An\", \"Cc\" und \"Bcc\" als nicht aufgelöst festlegen, wenn mehrere Übereinstimmungen gefunden werden",
+      "useinbuiltrulefordefaultpricelistselection": "Integrierte Regel für Auswahl der Standardpreisliste verwenden",
+      "uselegacyrendering": "Altes Formularrendering",
+      "usepositionhierarchy": "Positionshierarchie verwenden",
+      "usequickfindviewforgridsearch": "Schnellsuche bei der Suche in Rastern verwenden",
+      "useraccessauditinginterval": "Intervall für die Benutzerauthentifizierung",
+      "usereadform": "Leseoptimiertes Formular verwenden",
+      "usergroupid": "Benutzergruppe",
+      "userratingenabled": "Enable the user rating feature",
+      "useskypeprotocol": "Skype-Protokoll des Benutzers",
+      "utcconversiontimezonecode": "Zeitzonencode für die UTC-Konvertierung",
+      "v3calloutconfighash": "V3-Legendenhash",
+      "versionnumber": "Versionsnummer",
+      "webresource_organization": "Webressourcen",
+      "webresourcehash": "Webressourcen-Hash",
+      "weekstartdaycode": "Code für ersten Tag der Woche",
+      "widgetproperties": "Nur zur internen Verwendung (widgetproperties)",
+      "yammergroupid": "Yammer-Gruppen-ID",
+      "yammernetworkpermalink": "Yammer-Netzwerk-Permalink",
+      "yammeroauthaccesstokenexpired": "Yammer-OAuth-Zugriffstoken abgelaufen",
+      "yammerpostmethod": "Nur zur internen Verwendung (yammerpostmethod)",
+      "yearstartweekcode": "Code für erste Woche des Jahrs"
+    },
+    "PreferredName": "Organizations",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Organizations (Views)",
+    "Name": "_organization_views",
+    "RelatedEntityName": "Organizations",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0497fe66-8e71-40fb-b536-e0ced14c4615": "Alle Organisationen"
+    }
+  },
+  {
+    "DisplayName": "Adressbuchsynchronisierung zulassen (Organizations)",
+    "Name": "organization_allowaddressbooksyncs",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowaddressbooksyncs",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowaddressbooksyncs",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Automatische Reaktionserstellung zulassen (Organizations)",
+    "Name": "organization_allowautoresponsecreation",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowautoresponsecreation",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowautoresponsecreation",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Automatische Kündigung zulassen (Organizations)",
+    "Name": "organization_allowautounsubscribe",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowautounsubscribe",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowautounsubscribe",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Automatische Kündigungsbestätigung zulassen (Organizations)",
+    "Name": "organization_allowautounsubscribeacknowledgement",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowautounsubscribeacknowledgement",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowautounsubscribeacknowledgement",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Werbung in Outlook-Client-Statusleiste zulassen (Organizations)",
+    "Name": "organization_allowclientmessagebarad",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowclientmessagebarad",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowclientmessagebarad",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Überwachung auf Entitätsebene zulassen (Organizations)",
+    "Name": "organization_allowentityonlyaudit",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowentityonlyaudit",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowentityonlyaudit",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Marketing-E-Mail-Ausführung zulassen (Organizations)",
+    "Name": "organization_allowmarketingemailexecution",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowmarketingemailexecution",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowmarketingemailexecution",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Geplante Offlinesynchronisierung zulassen (Organizations)",
+    "Name": "organization_allowofflinescheduledsyncs",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowofflinescheduledsyncs",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowofflinescheduledsyncs",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Geplante Synchronisierung zulassen (Organizations)",
+    "Name": "organization_allowoutlookscheduledsyncs",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowoutlookscheduledsyncs",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowoutlookscheduledsyncs",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "E-Mail-Versand an nicht aufgelöste Adressen zulassen (Organizations)",
+    "Name": "organization_allowunresolvedpartiesonemailsend",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowunresolvedpartiesonemailsend",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowunresolvedpartiesonemailsend",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Benutzern die Auswahl des bevorzugten Formularmodus erlauben (Organizations)",
+    "Name": "organization_allowuserformmodepreference",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowuserformmodepreference",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowuserformmodepreference",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Dient zum Zulassen der Anzeige von Benachrichtigungsleisten für Tablet-Anwendungen in einem Browser. (Organizations)",
+    "Name": "organization_allowusersseeappdownloadmessage",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowusersseeappdownloadmessage",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowusersseeappdownloadmessage",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Excel-Export zulassen (Organizations)",
+    "Name": "organization_allowwebexcelexport",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "allowwebexcelexport",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "allowwebexcelexport",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "App-Designerumgebung für diese Organisation aktivieren (Organizations)",
+    "Name": "organization_appdesignerexperienceenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "appdesignerexperienceenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "appdesignerexperienceenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Enable Rich Editing Experience for Appointment (Organizations)",
+    "Name": "organization_appointmentricheditorexperience",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "appointmentricheditorexperience",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "appointmentricheditorexperience",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Standardberechtigung bei der Anfrageerstellung automatisch anwenden (Organizations)",
+    "Name": "organization_autoapplydefaultoncasecreate",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "autoapplydefaultoncasecreate",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "autoapplydefaultoncasecreate",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Standardberechtigung bei der Anfrageaktualisierung automatisch anwenden (Organizations)",
+    "Name": "organization_autoapplydefaultoncaseupdate",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "autoapplydefaultoncaseupdate",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "autoapplydefaultoncaseupdate",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist SLA automatisch anwenden nach manueller Überschreibung (Organizations)",
+    "Name": "organization_autoapplysla",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "autoapplysla",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "autoapplysla",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Karten in erweitertem Status für interaktives Dashboard anzeigen (Organizations)",
+    "Name": "organization_bounddashboarddefaultcardexpanded",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "bounddashboarddefaultcardexpanded",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "bounddashboarddefaultcardexpanded",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusupdate kaskadieren (Organizations)",
+    "Name": "organization_cascadestatusupdate",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cascadestatusupdate",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cascadestatusupdate",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Flussprozesse der proaktiven Cortana-Umgebung für diese Organisation aktivieren (Organizations)",
+    "Name": "organization_cortanaproactiveexperienceenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cortanaproactiveexperienceenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cortanaproactiveexperienceenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "\"Aktiv\" als Anfangszustand von Produkten aktivieren (Organizations)",
+    "Name": "organization_createproductswithoutparentinactivestate",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "createproductswithoutparentinactivestate",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "createproductswithoutparentinactivestate",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Währungen anzeigen mit (Organizations)",
+    "Name": "organization_currencydisplayoption",
+    "OptionSetInfoNameMapping": {
+      "0": "Währungssymbol",
+      "1": "Währungscode"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "currencydisplayoption",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "currencydisplayoption",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Währungsformatcode (Organizations)",
+    "Name": "organization_currencyformatcode",
+    "OptionSetInfoNameMapping": {
+      "0": "€123",
+      "1": "123€",
+      "2": "€ 123",
+      "3": "123 €"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "currencyformatcode",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "currencyformatcode",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Datumsformatcode (Organizations)",
+    "Name": "organization_dateformatcode",
+    "OptionSetInfoNameMapping": {},
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "dateformatcode",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "dateformatcode",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Serien-St.-Endbereichsdatumstyp (Organizations)",
+    "Name": "organization_defaultrecurrenceendrangetype",
+    "OptionSetInfoNameMapping": {
+      "1": "Kein Enddatum",
+      "2": "Anzahl der Vorkommen",
+      "3": "Enddatum"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "defaultrecurrenceendrangetype",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "defaultrecurrenceendrangetype",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Social Care deaktiviert (Organizations)",
+    "Name": "organization_disablesocialcare",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "disablesocialcare",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "disablesocialcare",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Rabattberechnungsmethode (Organizations)",
+    "Name": "organization_discountcalculationmethod",
+    "OptionSetInfoNameMapping": {
+      "0": "Vertragsposition",
+      "1": "Pro Einheit"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "discountcalculationmethod",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "discountcalculationmethod",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Navigationstour anzeigen (Organizations)",
+    "Name": "organization_displaynavigationtour",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "displaynavigationtour",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "displaynavigationtour",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "E-Mail-Verbindungskanal (Organizations)",
+    "Name": "organization_emailconnectionchannel",
+    "OptionSetInfoNameMapping": {
+      "0": "Serverseitige Synchronisierung",
+      "1": "Microsoft Dynamics 365-E-Mail-Router"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "emailconnectionchannel",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "emailconnectionchannel",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "E-Mail-Korrelation verwenden (Organizations)",
+    "Name": "organization_emailcorrelationenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "emailcorrelationenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "emailcorrelationenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Integration in Bing Maps aktivieren (Organizations)",
+    "Name": "organization_enablebingmapsintegration",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "enablebingmapsintegration",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "enablebingmapsintegration",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Integration mit immersivem Skype aktivieren (Organizations)",
+    "Name": "organization_enableimmersiveskypeintegration",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "enableimmersiveskypeintegration",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "enableimmersiveskypeintegration",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Gibt an, ob der Benutzer die Live-Rollenkarte in UCI aktiviert oder deaktiviert hat. (Organizations)",
+    "Name": "organization_enablelivepersonacarduci",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "enablelivepersonacarduci",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "enablelivepersonacarduci",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Lernpfaderstellung aktivieren (Organizations)",
+    "Name": "organization_enablelpauthoring",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "enablelpauthoring",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "enablelpauthoring",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Integration in Microsoft Flow aktivieren (Organizations)",
+    "Name": "organization_enablemicrosoftflowintegration",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "enablemicrosoftflowintegration",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "enablemicrosoftflowintegration",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Preisberechnung bei Erstellung aktivieren (Organizations)",
+    "Name": "organization_enablepricingoncreate",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "enablepricingoncreate",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "enablepricingoncreate",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Grenzwert für Schnellsuche-Datensätze aktiviert (Organizations)",
+    "Name": "organization_enablequickfindrecordlimit",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "quickfindrecordlimitenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "quickfindrecordlimitenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Intelligente Übereinstimmung aktivieren (Organizations)",
+    "Name": "organization_enablesmartmatching",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "enablesmartmatching",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "enablesmartmatching",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Organisationseinstellung zum Erzwingen schreibgeschützter Plug-Ins. (Organizations)",
+    "Name": "organization_enforcereadonlyplugins",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "enforcereadonlyplugins",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "enforcereadonlyplugins",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Textanalyse für diese Organisation aktivieren (Organizations)",
+    "Name": "organization_featureenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispaienabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "sendbulkemailinuci",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem10": {
+        "OptionSetReferenceColumnName": "iscontextualemailenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem11": {
+        "OptionSetReferenceColumnName": "advancedfilteringenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem12": {
+        "OptionSetReferenceColumnName": "isnotesanalysisenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem13": {
+        "OptionSetReferenceColumnName": "ismsteamsusersyncenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem14": {
+        "OptionSetReferenceColumnName": "modernadvancedfindfiltering",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem15": {
+        "OptionSetReferenceColumnName": "isquickcreateenabledforopportunityclose",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem16": {
+        "OptionSetReferenceColumnName": "allowredirectadminsettingstomodernui",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem17": {
+        "OptionSetReferenceColumnName": "allowlegacydialogsembedding",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem18": {
+        "OptionSetReferenceColumnName": "inactivitytimeoutenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem19": {
+        "OptionSetReferenceColumnName": "isgeospatialazuremapsintegrationenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem2": {
+        "OptionSetReferenceColumnName": "isrelationshipinsightsenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem20": {
+        "OptionSetReferenceColumnName": "sessionrecordingenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem21": {
+        "OptionSetReferenceColumnName": "iscustomcontrolsincanvasappsenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem22": {
+        "OptionSetReferenceColumnName": "advancedlookupenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem23": {
+        "OptionSetReferenceColumnName": "sessiontimeoutenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem24": {
+        "OptionSetReferenceColumnName": "ismobileclientondemandsyncenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem25": {
+        "OptionSetReferenceColumnName": "isfolderautocreatedonsp",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem26": {
+        "OptionSetReferenceColumnName": "allowlegacyclientexperience",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem27": {
+        "OptionSetReferenceColumnName": "quickactiontoopenrecordsinsidepaneenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem28": {
+        "OptionSetReferenceColumnName": "ismanualsalesforecastingenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem29": {
+        "OptionSetReferenceColumnName": "ispricelistmandatory",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem3": {
+        "OptionSetReferenceColumnName": "iscontextualhelpenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem30": {
+        "OptionSetReferenceColumnName": "isautodatacapturev2enabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem31": {
+        "OptionSetReferenceColumnName": "isresourcebookingexchangesyncenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem32": {
+        "OptionSetReferenceColumnName": "ispreviewenabledforactioncard",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem33": {
+        "OptionSetReferenceColumnName": "userratingenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem34": {
+        "OptionSetReferenceColumnName": "isactioncardenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem35": {
+        "OptionSetReferenceColumnName": "productrecommendationsenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem36": {
+        "OptionSetReferenceColumnName": "canoptoutnewsearchexperience",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem37": {
+        "OptionSetReferenceColumnName": "orginsightsenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem38": {
+        "OptionSetReferenceColumnName": "ismodeldrivenappsinmsteamsenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem39": {
+        "OptionSetReferenceColumnName": "relevancesearchenabledbyplatform",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem4": {
+        "OptionSetReferenceColumnName": "paipreviewscenarioenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem40": {
+        "OptionSetReferenceColumnName": "recalculatesla",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem41": {
+        "OptionSetReferenceColumnName": "isactivityanalysisenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem42": {
+        "OptionSetReferenceColumnName": "newsearchexperienceenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem43": {
+        "OptionSetReferenceColumnName": "improvesearchloggingenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem44": {
+        "OptionSetReferenceColumnName": "enablemakerswitchtoclassic",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem45": {
+        "OptionSetReferenceColumnName": "servestaticresourcesfromazurecdn",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem46": {
+        "OptionSetReferenceColumnName": "isnewaddproductexperienceenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem47": {
+        "OptionSetReferenceColumnName": "enableunifiedinterfaceshellrefresh",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem48": {
+        "OptionSetReferenceColumnName": "iswriteinproductsallowed",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem49": {
+        "OptionSetReferenceColumnName": "enableasyncmergeapiforuci",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem5": {
+        "OptionSetReferenceColumnName": "ispreviewforautocaptureenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem50": {
+        "OptionSetReferenceColumnName": "isconflictdetectionenabledformobileclient",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem51": {
+        "OptionSetReferenceColumnName": "advancedcolumnfilteringenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem52": {
+        "OptionSetReferenceColumnName": "isactionsupportfeatureenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem53": {
+        "OptionSetReferenceColumnName": "allowusershidingsystemviews",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem54": {
+        "OptionSetReferenceColumnName": "issalesassistantenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem55": {
+        "OptionSetReferenceColumnName": "isluisenabledford365bot",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem56": {
+        "OptionSetReferenceColumnName": "isautodatacaptureenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem57": {
+        "OptionSetReferenceColumnName": "advancedcolumneditorenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem58": {
+        "OptionSetReferenceColumnName": "isdelveactionhubintegrationenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem59": {
+        "OptionSetReferenceColumnName": "usequickfindviewforgridsearch",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem6": {
+        "OptionSetReferenceColumnName": "enablelivepersoncardintegrationinoffice",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem60": {
+        "OptionSetReferenceColumnName": "isbpfentitycustomizationfeatureenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem61": {
+        "OptionSetReferenceColumnName": "iscontentsecuritypolicyenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem62": {
+        "OptionSetReferenceColumnName": "isrichtextnotesenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem63": {
+        "OptionSetReferenceColumnName": "isplaybookenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem64": {
+        "OptionSetReferenceColumnName": "textanalyticsenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem7": {
+        "OptionSetReferenceColumnName": "isallmoneydecimal",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem8": {
+        "OptionSetReferenceColumnName": "ismsteamscollaborationenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      },
+      "OptionSetReferenceItem9": {
+        "OptionSetReferenceColumnName": "ismsteamsenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispaienabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Format für Buchhaltungsperiode (Organizations)",
+    "Name": "organization_fiscalperiodformat",
+    "OptionSetInfoNameMapping": {
+      "1": "{0}. Quartal",
+      "2": "Q{0}",
+      "3": "P{0}",
+      "4": "{0}. Monat",
+      "5": "M{0}",
+      "6": "{0}. Halbjahr",
+      "7": "Name des Monats"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "fiscalperiodformatperiod",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "fiscalperiodformatperiod",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Werden Einstellungen für Geschäftsjahr aktualisiert (Organizations)",
+    "Name": "organization_fiscalsettingsupdated",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "fiscalsettingsupdated",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "fiscalsettingsupdated",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Präfix für Geschäftsjahr (Organizations)",
+    "Name": "organization_fiscalyearformatprefix",
+    "OptionSetInfoNameMapping": {
+      "1": "GJ",
+      "2": ""
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "fiscalyearformatprefix",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "fiscalyearformatprefix",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Suffix für Geschäftsjahr (Organizations)",
+    "Name": "organization_fiscalyearformatsuffix",
+    "OptionSetInfoNameMapping": {
+      "1": "GJ",
+      "2": " Geschäftsjahr",
+      "3": ""
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "fiscalyearformatsuffix",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "fiscalyearformatsuffix",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Format für Geschäftsjahr (Organizations)",
+    "Name": "organization_fiscalyearformatyear",
+    "OptionSetInfoNameMapping": {
+      "1": "JJJJ",
+      "2": "JJ",
+      "3": "ZZJJ"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "fiscalyearformatyear",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "fiscalyearformatyear",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Reihenfolge für Anzeige des vollständigen Namens (Organizations)",
+    "Name": "organization_fullnameconventioncode",
+    "OptionSetInfoNameMapping": {
+      "0": "Nachname, Vorname",
+      "1": "Vorname",
+      "2": "Nachname, Vorname, zweiter Vorname",
+      "3": "Vorname, zweiter Vorname, Nachname",
+      "6": "Nachname, Leerzeichen, Vorname",
+      "7": "Nachname, kein Leerzeichen, Vorname"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "fullnameconventioncode",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "fullnameconventioncode",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Warnungen für Fehler generieren (Organizations)",
+    "Name": "organization_generatealertsforerrors",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "generatealertsforerrors",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "generatealertsforerrors",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Warnungen für Informationen generieren (Organizations)",
+    "Name": "organization_generatealertsforinformation",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "generatealertsforinformation",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "generatealertsforinformation",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Warnungen für Warnungen generieren (Organizations)",
+    "Name": "organization_generatealertsforwarnings",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "generatealertsforwarnings",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "generatealertsforwarnings",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Bereich \"Erste Schritte\" für Inhalte aktiviert (Organizations)",
+    "Name": "organization_getstartedpanecontentenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "getstartedpanecontentenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "getstartedpanecontentenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist für AppendUrl-Parameter aktiviert (Organizations)",
+    "Name": "organization_globalappendurlparametersenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "globalappendurlparametersenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "globalappendurlparametersenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist für anpassbare globale Hilfe aktiviert (Organizations)",
+    "Name": "organization_globalhelpurlenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "globalhelpurlenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "globalhelpurlenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Zugriff auf Netzwerkdienst gewähren (Organizations)",
+    "Name": "organization_grantaccesstonetworkservice",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "grantaccesstonetworkservice",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "grantaccesstonetworkservice",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Hierarchisches Sicherheitsmodell aktivieren (Organizations)",
+    "Name": "organization_hierarchicalsecuritymodelenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ishierarchicalsecuritymodelenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ishierarchicalsecuritymodelenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Interne E-Mail ignorieren (Organizations)",
+    "Name": "organization_ignoreinternalemail",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ignoreinternalemail",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ignoreinternalemail",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Anwendungsmodus aktiviert (Organizations)",
+    "Name": "organization_isappmode",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isappmode",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isappmode",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Anlagensynchronisierung aktiviert? (Organizations)",
+    "Name": "organization_isappointmentattachmentsyncenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isappointmentattachmentsyncenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isappointmentattachmentsyncenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Synchronisierung zugewiesener Aufgaben aktiviert? (Organizations)",
+    "Name": "organization_isassignedtaskssyncenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isassignedtaskssyncenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isassignedtaskssyncenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Überwachung aktiviert (Organizations)",
+    "Name": "organization_isauditenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isauditenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isauditenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Automatisches Speichern aktiviert (Organizations)",
+    "Name": "organization_isautosaveenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isautosaveenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isautosaveenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "IsCollaborationExperienceEnabled (Organizations)",
+    "Name": "organization_iscollaborationexperienceenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "iscollaborationexperienceenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "iscollaborationexperienceenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Postanschriftsynchronisierung aktiviert? (Organizations)",
+    "Name": "organization_iscontactmailingaddresssyncenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "iscontactmailingaddresssyncenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "iscontactmailingaddresssyncenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ländercodeauswahl aktivieren oder deaktivieren (Organizations)",
+    "Name": "organization_iscountrycodeselectionenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isdefaultcountrycodecheckenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isdefaultcountrycodecheckenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Stellvertretungszugriff aktiviert? (Organizations)",
+    "Name": "organization_isdelegationaccessenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isdelegateaccessenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isdelegateaccessenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Organisation deaktiviert (Organizations)",
+    "Name": "organization_isdisabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isdisabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isdisabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Duplikaterkennung aktiviert (Organizations)",
+    "Name": "organization_isduplicatedetectionenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isduplicatedetectionenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isduplicatedetectionenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Duplikaterkennung für Import aktiviert (Organizations)",
+    "Name": "organization_isduplicatedetectionenabledforimport",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isduplicatedetectionenabledforimport",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isduplicatedetectionenabledforimport",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Duplikaterkennung für Offlinesynchronisierung aktiviert (Organizations)",
+    "Name": "organization_isduplicatedetectionenabledforofflinesync",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isduplicatedetectionenabledforofflinesync",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isduplicatedetectionenabledforofflinesync",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Duplikaterkennung für Onlineerstellung/-update aktiviert (Organizations)",
+    "Name": "organization_isduplicatedetectionenabledforonlinecreateupdate",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isduplicatedetectionenabledforonlinecreateupdate",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isduplicatedetectionenabledforonlinecreateupdate",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Das Nachverfolgen der Empfängeraktivität für gesendete E-Mails zulassen (Organizations)",
+    "Name": "organization_isemailmonitoringallowed",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isemailmonitoringallowed",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isemailmonitoringallowed",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist die Inhaltsfilterung für das E-Mail-Serverprofil aktiviert? (Organizations)",
+    "Name": "organization_isemailserverprofilecontentfilteringenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isemailserverprofilecontentfilteringenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isemailserverprofilecontentfilteringenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Optionssatzwerte für isenabledforallroles (Organizations)",
+    "Name": "organization_isenabledforallroles",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isenabledforallroles",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isenabledforallroles",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Externe Dateispeicherung aktivieren (Organizations)",
+    "Name": "organization_isexternalfilestorageenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isexternalfilestorageenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isexternalfilestorageenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Externe Suchdatensynchronisierung aktivieren (Organizations)",
+    "Name": "organization_isexternalsearchindexenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isexternalsearchindexenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isexternalsearchindexenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Buchhaltungsperiode monatlich (Organizations)",
+    "Name": "organization_isfiscalperiodmonthbased",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isfiscalperiodmonthbased",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isfiscalperiodmonthbased",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist die ordnerbasierte Nachverfolgung aktiviert? (Organizations)",
+    "Name": "organization_isfolderbasedtrackingenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isfolderbasedtrackingenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isfolderbasedtrackingenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Volltextsuche für Schnellsuche aktivieren (Organizations)",
+    "Name": "organization_isfulltextsearchenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isfulltextsearchenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isfulltextsearchenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist für erzwungenes Entsperren des Postfachs aktiviert (Organizations)",
+    "Name": "organization_ismailboxforcedunlockingenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ismailboxforcedunlockingenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ismailboxforcedunlockingenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Postfach-Keep-Alive aktiviert (Organizations)",
+    "Name": "organization_ismailboxinactivebackoffenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ismailboxinactivebackoffenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ismailboxinactivebackoffenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "MobileOffline für diese Organisation aktivieren (Organizations)",
+    "Name": "organization_ismobileofflineenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ismobileofflineenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ismobileofflineenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "OfficeGraph für diese Organisation aktivieren (Organizations)",
+    "Name": "organization_isofficegraphenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isofficegraphenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isofficegraphenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "OneDrive für diese Organisation aktivieren (Organizations)",
+    "Name": "organization_isonedriveenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isonedriveenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isonedriveenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Präsenz aktiviert (Organizations)",
+    "Name": "organization_ispresenceenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispresenceenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispresenceenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Vorschau für die E-Mail-Überwachung zulassen (Organizations)",
+    "Name": "organization_ispreviewforemailmonitoringallowed",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispreviewforemailmonitoringallowed",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispreviewforemailmonitoringallowed",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Leseüberwachung aktiviert (Organizations)",
+    "Name": "organization_isreadauditenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isreadauditenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isreadauditenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "IsSharingInOrgAllowed (Organizations)",
+    "Name": "organization_issharinginorgallowed",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "issharinginorgallowed",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "issharinginorgallowed",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Vertriebsauftragsintegration aktiviert (Organizations)",
+    "Name": "organization_issopintegrationenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "issopintegrationenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "issopintegrationenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Textumbruch aktivieren (Organizations)",
+    "Name": "organization_istextwrapenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "istextwrapenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "istextwrapenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist für die Überwachung des Benutzerzugriffs aktiviert (Organizations)",
+    "Name": "organization_isuseraccessauditenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isuseraccessauditenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isuseraccessauditenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ISV-Integrationsmodus (Organizations)",
+    "Name": "organization_isvintegrationcode",
+    "OptionSetInfoNameMapping": {
+      "0": "Keine",
+      "1": "Internet",
+      "2": "Arbeitsstationsclient für Outlook",
+      "3": "Internet; Arbeitsstationsclient für Outlook",
+      "4": "Laptopclient für Outlook",
+      "5": "Internet; Laptopclient für Outlook",
+      "6": "Outlook",
+      "7": "Alle"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isvintegrationcode",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "isvintegrationcode",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Microsoft Teams-Integration wurde vom Benutzer geändert (Organizations)",
+    "Name": "organization_msteamssettingchangedbyuser",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ismsteamssettingchangedbyuser",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ismsteamssettingchangedbyuser",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Negativformat (Organizations)",
+    "Name": "organization_negativeformatcode",
+    "OptionSetInfoNameMapping": {
+      "0": "Klammern",
+      "1": "Minuszeichen",
+      "2": "Minuszeichen und Leerzeichen",
+      "3": "Abschließendes Minuszeichen",
+      "4": "Leerzeichen und abschließendes Minuszeichen"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "negativeformatcode",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "negativeformatcode",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Postfachbesitzer über Warnungen auf E-Mail-Server-Ebene benachrichtigen (Organizations)",
+    "Name": "organization_notifymailboxownerofemailserverlevelalerts",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "notifymailboxownerofemailserverlevelalerts",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "notifymailboxownerofemailserverlevelalerts",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Automatische Office-App-Bereitstellung für diese Organisation aktivieren (Organizations)",
+    "Name": "organization_officeappsautodeploymentenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "officeappsautodeploymentenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "officeappsautodeploymentenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "OOB-Preisberechnung aktivieren (Organizations)",
+    "Name": "organization_oobpricecalculationenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "oobpricecalculationenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "oobpricecalculationenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Organisationsstatus (Organizations)",
+    "Name": "organization_organizationstate",
+    "OptionSetInfoNameMapping": {
+      "0": "Erstellen",
+      "1": "Upgrade",
+      "2": "Wird aktualisiert...",
+      "3": "Aktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "organizationstate",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "organizationstate",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Plug-In-Ablaufverfolgungsprotokoll-Einstellung (Organizations)",
+    "Name": "organization_plugintracelogsetting",
+    "OptionSetInfoNameMapping": {
+      "0": "Aus",
+      "1": "Ausnahme",
+      "2": "Alle"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "plugintracelogsetting",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "plugintracelogsetting",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Power\u00A0BI-Feature für diese Organisation aktivieren (Organizations)",
+    "Name": "organization_powerbifeature",
+    "OptionSetInfoNameMapping": {
+      "0": "Deaktivieren",
+      "1": "Aktivieren"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "powerbifeatureenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "powerbifeatureenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Sicheren Frame für E-Mail anzeigen (Organizations)",
+    "Name": "organization_rendersecureiframeforemail",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "rendersecureiframeforemail",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "rendersecureiframeforemail",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Skriptfehler melden (Organizations)",
+    "Name": "organization_reportscripterrors",
+    "OptionSetInfoNameMapping": {
+      "0": "Keine Voreinstellung für den Versand eines Fehlerberichts an Microsoft wegen Microsoft Dynamics 365",
+      "1": "Vor dem Senden eines Fehlerberichts an Microsoft Bestätigung anfordern",
+      "2": "Fehlerbericht automatisch ohne Bestätigung an Microsoft senden",
+      "3": "Niemals einen Fehlerbericht zu Microsoft Dynamics 365 an Microsoft senden"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "reportscripterrors",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "reportscripterrors",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Genehmigung für Warteschlangen-E-Mail erforderlich (Organizations)",
+    "Name": "organization_requireapprovalforqueueemail",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "requireapprovalforqueueemail",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "requireapprovalforqueueemail",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist Genehmigung für Benutzer-E-Mail erforderlich (Organizations)",
+    "Name": "organization_requireapprovalforuseremail",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "requireapprovalforuseremail",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "requireapprovalforuseremail",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Verwenden Sie dieselbe E-Mail-Adresse für alle nicht aufgelösten Treffer, wenn Sie für einen manuell auflösen (Organizations)",
+    "Name": "organization_resolvesimilarunresolvedemailaddress",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "resolvesimilarunresolvedemailaddress",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "resolvesimilarunresolvedemailaddress",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusupdate einschränken (Organizations)",
+    "Name": "organization_restrictstatusupdate",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "restrictstatusupdate",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "restrictstatusupdate",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SharePoint-Bereitstellungstyp auswählen (Organizations)",
+    "Name": "organization_sharepointdeploymenttype",
+    "OptionSetInfoNameMapping": {
+      "0": "Online",
+      "1": "Lokal"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sharepointdeploymenttype",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sharepointdeploymenttype",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Bei Zuweisung für bisherigen Besitzer freigeben (Organizations)",
+    "Name": "organization_sharetopreviousowneronassign",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sharetopreviousowneronassign",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "sharetopreviousowneronassign",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Benachrichtigung über einen veralteten KBArticle dem Benutzer anzeigen (Organizations)",
+    "Name": "organization_showkbarticledeprecationnotification",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "showkbarticledeprecationnotification",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "showkbarticledeprecationnotification",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Wochennummer anzeigen (Organizations)",
+    "Name": "organization_showweeknumber",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "showweeknumber",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "showweeknumber",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist SQM aktiviert (Organizations)",
+    "Name": "organization_sqmenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sqmenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "sqmenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ist SLA unterdrückt? (Organizations)",
+    "Name": "organization_suppresssla",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "suppresssla",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "suppresssla",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Framework zur Synchronisierung von Dynamics 365 und Azure für diese Organisation aktivieren. (Organizations)",
+    "Name": "organization_syncoptinselection",
+    "OptionSetInfoNameMapping": {
+      "0": "Deaktivieren",
+      "1": "Aktivieren"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "syncoptinselection",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "syncoptinselection",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status des Aktivierungs- oder Deaktivierungsvorgangs für die Synchronisierung von Dynamics 365 und Azure. (Organizations)",
+    "Name": "organization_syncoptinselectionstatus",
+    "OptionSetInfoNameMapping": {
+      "1": "Verarbeitung",
+      "2": "Übergeben",
+      "3": "Fehler"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "syncoptinselectionstatus",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "syncoptinselectionstatus",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Aufgabenflussprozesse für diese Organisation aktivieren (Organizations)",
+    "Name": "organization_taskbasedflowenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "taskbasedflowenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "taskbasedflowenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Zeitformatcode (Organizations)",
+    "Name": "organization_timeformatcode",
+    "OptionSetInfoNameMapping": {},
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "timeformatcode",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "timeformatcode",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Die Felder \"An\", \"Cc\" und \"Bcc\" als nicht aufgelöst festlegen, wenn mehrere Übereinstimmungen gefunden werden (Organizations)",
+    "Name": "organization_unresolveemailaddressifmultiplematch",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "unresolveemailaddressifmultiplematch",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "unresolveemailaddressifmultiplematch",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Integrierte Regel für Auswahl der Standardpreisliste verwenden (Organizations)",
+    "Name": "organization_usebuiltinrulefordefaultpricelistselection",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "useinbuiltrulefordefaultpricelistselection",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "useinbuiltrulefordefaultpricelistselection",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Altes Formularrendering (Organizations)",
+    "Name": "organization_uselegacyrendering",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "uselegacyrendering",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "uselegacyrendering",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Positionshierarchie verwenden (Organizations)",
+    "Name": "organization_usepositionhierarchy",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "usepositionhierarchy",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "usepositionhierarchy",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Leseoptimiertes Formular verwenden (Organizations)",
+    "Name": "organization_usereadform",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "usereadform",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "usereadform",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Skype-Protokoll des Benutzers (Organizations)",
+    "Name": "organization_useskypeprotocol",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "useskypeprotocol",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "useskypeprotocol",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Code für ersten Tag der Woche (Organizations)",
+    "Name": "organization_weekstartdaycode",
+    "OptionSetInfoNameMapping": {},
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "weekstartdaycode",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "weekstartdaycode",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Yammer-OAuth-Zugriffstoken abgelaufen (Organizations)",
+    "Name": "organization_yammeroauthtokenexpired",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "yammeroauthaccesstokenexpired",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "yammeroauthaccesstokenexpired",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Nur zur internen Verwendung (Organizations)",
+    "Name": "organization_yammerpostmethod",
+    "OptionSetInfoNameMapping": {
+      "0": "Öffentlich",
+      "1": "Privat"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "yammerpostmethod",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "yammerpostmethod",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Erkenntnisse aus sozialen Medien aktiviert (Organizations)",
+    "Name": "socialinsightsconfiguration_enabled",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "socialinsightsenabled",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "socialinsightsenabled",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Erkenntnisse aus sozialen Medien-Nutzungsbedingungen (Organizations)",
+    "Name": "socialinsightsconfiguration_termsaccepted",
+    "OptionSetInfoNameMapping": {
+      "0": "Nein",
+      "1": "Ja"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "socialinsightstermsaccepted",
+        "OptionSetReferenceEntityName": "Organizations"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "socialinsightstermsaccepted",
+    "RelatedEntityName": "Organizations",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,103 @@
+"bookingAdminOverview As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar3_1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    "Gallery_BookingAdminOverview As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =680
+        Items: =Filter(hnoBookings, hnoBookingStartDateAndTime > Today())
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        Width: =1366
+        Y: =88
+        ZIndex: =1
+
+        Title3_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                =ThisItem.hnoPatient & ": " & ThisItem.hnoBookingDescription & " bei " & ThisItem.hnoDoctor
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle4_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                =Text(DateValue(ThisItem.hnoBookingStartDateAndTime , 'de-DE'), "dd.mm.yyyy") & " | " & Text(DateTimeValue(ThisItem.hnoBookingStartDateAndTime), "hh:mm") & " - " & Text(DateTimeValue(ThisItem.hnoBookingEndDateAndTime),"hh:mm")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title3_1.Y + Title3_1.Height + 4
+            ZIndex: =2
+
+        NextArrow2_2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.Trash
+            OnSelect: =Remove(hnoBookings, ThisItem)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =1208
+            Y: =28
+            ZIndex: =3
+
+        Separator7_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        NextArrow2_3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent);Navigate(bookingAdminDetail)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =1294
+            Y: =28
+            ZIndex: =5
+
+    LblAppName1_1 As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="Terminübersicht"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    icon_back_bookingAdminOverview As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =47
+        X: =16
+        Y: =18
+        ZIndex: =3
+

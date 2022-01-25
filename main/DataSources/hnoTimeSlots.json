@@ -1,0 +1,99 @@
+[
+  {
+    "DisplayName": "hnoTimeSlots (Views)",
+    "Name": "_cr6bf_hnotimeslots_views",
+    "RelatedEntityName": "hnoTimeSlots",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0c53d799-76f3-4bf1-8109-78186255a75d": "hnoTimeSlots Ansicht für die erweiterte Suche",
+      "1ac03543-8eaf-440c-a5ac-7ee5a1fd87e8": "Inaktive hnoTimeSlots",
+      "274fa6fb-551c-4c2b-a477-453620ffef1e": "hnoTimeSlots Zugeordnete Ansicht",
+      "5006bcb8-bf78-471e-bbc6-e7a84db828f0": "hnoTimeSlots Suchansicht",
+      "5724bda3-12f9-45cb-99d7-e27753c94932": "Aktive hnoTimeSlots"
+    }
+  },
+  {
+    "DisplayName": "Status (hnoTimeSlots)",
+    "Name": "cr6bf_hnotimeslots_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Aktiv",
+      "1": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "hnoTimeSlots"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "hnoTimeSlots",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusgrund (hnoTimeSlots)",
+    "Name": "cr6bf_hnotimeslots_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Aktiv",
+      "2": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "hnoTimeSlots"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "hnoTimeSlots",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6bf_hnotimeslotses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6bf_hnotimeslots",
+    "MaxGetRowsCount": 500,
+    "Name": "hnoTimeSlots",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Besitzer",
+      "cr6bf_hnoendtime": "hnoEndTime",
+      "cr6bf_hnostarttime": "hnoStartTime",
+      "cr6bf_hnotimeslots_AsyncOperations": "Systemaufträge",
+      "cr6bf_hnotimeslots_BulkDeleteFailures": "Massenlöschungsfehler",
+      "cr6bf_hnotimeslots_DuplicateBaseRecord": "Doppelte Datensätze (cr6bf_hnotimeslots_DuplicateBaseRecord)",
+      "cr6bf_hnotimeslots_DuplicateMatchingRecord": "Doppelte Datensätze (cr6bf_hnotimeslots_DuplicateMatchingRecord)",
+      "cr6bf_hnotimeslots_MailboxTrackingFolders": "Automatisch nachverfolgte Postfachordner",
+      "cr6bf_hnotimeslots_PrincipalObjectAttributeAccesses": "Sicherer Feldzugriff",
+      "cr6bf_hnotimeslots_ProcessSession": "Prozesssitzungen",
+      "cr6bf_hnotimeslots_SyncErrors": "Synchronisierungsfehler",
+      "cr6bf_hnotimeslotsid": "hnoTimeSlots",
+      "cr6bf_name": "Name",
+      "createdby": "Erstellt von",
+      "createdon": "Erstellt am",
+      "createdonbehalfby": "Erstellt von (Stellvertreter)",
+      "importsequencenumber": "Importsequenznummer",
+      "modifiedby": "Geändert von",
+      "modifiedon": "Geändert am",
+      "modifiedonbehalfby": "Geändert von (Stellvertreter)",
+      "overriddencreatedon": "Datensatz erstellt am",
+      "owningbusinessunit": "Besitzer (Unternehmenseinheit)",
+      "owningteam": "Besitzer (Team)",
+      "owninguser": "Besitzer (Benutzer)",
+      "statecode": "Status",
+      "statuscode": "Statusgrund",
+      "timezoneruleversionnumber": "Versionsnummer der Zeitzonenregel",
+      "utcconversiontimezonecode": "Zeitzonencode für die UTC-Konvertierung",
+      "versionnumber": "Versionsnummer"
+    },
+    "PreferredName": "hnoTimeSlots",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

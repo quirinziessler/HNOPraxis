@@ -1,0 +1,188 @@
+"showOffices As screen.'tabletLayout_HeaderAndGallery_ver3.0'":
+
+    icon_search_showOffices As icon.Search:
+        Icon: =Icon.Search
+        X: =588
+        Y: =79
+        ZIndex: =1
+
+    SearchBoxShowOffices As text:
+        Default: =""
+        Height: =62
+        HintText: ="Nach Standort suchen"
+        Width: =669
+        X: =673
+        Y: =79
+        ZIndex: =2
+
+    RectQuickActionBar5 As rectangle:
+        Height: =64
+        Width: =Parent.Width
+        ZIndex: =3
+
+    title_showOffices As label:
+        Align: =Align.Center
+        Height: =64
+        PaddingRight: =10
+        Text: ="Unsere Standorte"
+        Width: =Parent.Width
+        ZIndex: =4
+
+    "gallery_showOffices As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =627
+        Items: =Search(hnoOffices, SearchBoxShowOffices.Text, "cr6bf_hnooffices", "cr6bf_adress", "cr6bf_officepostalcode", "cr6bf_officecity")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =798
+        X: =568
+        Y: =141
+        ZIndex: =5
+
+        Image1 As image:
+            Height: =128
+            Image: =ThisItem.officeimg
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title5 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.officetitle
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image1.Width - 104
+            X: =Image1.X + Image1.Width + 24
+            Y: =32
+            ZIndex: =2
+
+        Subtitle2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.officedescription
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title5.Width
+            X: =Title5.X
+            Y: =Title5.Y + Title5.Height + 4
+            ZIndex: =3
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Subtitle2_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.officestreet & ", " & ThisItem.officepostalcode & " " & ThisItem.officecity
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title5.Width
+            X: =168
+            Y: =118
+            ZIndex: =6
+
+        Icon5 As icon.ChevronRight:
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent);Navigate(showOfficeDetail)
+            X: =718
+            Y: =54
+            ZIndex: =7
+
+    icon_back_showOffices As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =47
+        X: =16
+        Y: =6
+        ZIndex: =6
+
+    "map_showOffices As 'Map (preview)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DefaultLocation: =false
+        DisplayMode: =DisplayMode.View
+        Height: =If(tog_FullScreen_showOffices.Value, App.Height, 704)
+        InfoCards: ='''Microsoft.Map.InfoCards'''.OnClick
+        Items: =hnoOffices
+        ItemsAddresses: ="cr6bf_adress"
+        ItemsLabels: ="cr6bf_hnooffices"
+        ItemsLatitudes: ="cr6bf_officelat"
+        ItemsLongitudes: ="cr6bf_officelong"
+        OnSelect: =false
+        PinColor: =RGBA(29, 114, 169, 1)
+        SatelliteView: =tog_SatelliteView_showOffices.Value
+        Width: =If(tog_FullScreen_showOffices.Value, App.Width, 568)
+        X: =0
+        Y: =64
+        ZIndex: =7
+
+        officetitle1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Name"
+            FieldName: ="cr6bf_hnooffices"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =7
+
+        officedescription1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Beschreibung"
+            FieldName: ="cr6bf_officedescription"
+            FieldVariantName: ="textualColumn"
+            Order: =2
+            ZIndex: =8
+
+        officestreet1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Straße"
+            FieldName: ="cr6bf_adress"
+            FieldVariantName: ="textualColumn"
+            Order: =3
+            ZIndex: =9
+
+        officepostalcode1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Postleitzahl"
+            FieldName: ="cr6bf_officepostalcode"
+            FieldVariantName: ="textualColumn"
+            Order: =4
+            ZIndex: =10
+
+        officecity1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Stadt"
+            FieldName: ="cr6bf_officecity"
+            FieldVariantName: ="textualColumn"
+            Order: =5
+            ZIndex: =11
+
+    tog_FullScreen_showOffices As toggleSwitch:
+        FalseText: ="Karte maximieren"
+        Height: =24
+        TrueText: ="Karte minimieren"
+        Width: =205
+        X: =16
+        Y: =79
+        ZIndex: =8
+
+    tog_SatelliteView_showOffices As toggleSwitch:
+        FalseText: ="Kartenansicht"
+        Height: =24
+        TrueText: ="Satellitenansicht"
+        Width: =205
+        X: =249
+        Y: =79
+        ZIndex: =9
+

@@ -1,0 +1,76 @@
+loginScreen As screen:
+
+    Container2 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =RGBA(230, 230, 230, 1)
+        Height: =768
+        LayoutMode: =LayoutMode.Auto
+        Width: =673
+        X: =692
+        ZIndex: =1
+
+    title_loginpage As label:
+        Height: =68
+        Size: =30
+        Text: ="Login"
+        Width: =177
+        X: =708
+        Y: =28
+        ZIndex: =2
+
+    txtInputUsername As text:
+        Default: =""
+        HintText: ="Benutzername"
+        X: =868
+        Y: =172
+        ZIndex: =3
+
+    txtInputPassword As text:
+        Default: =""
+        HintText: ="Passwort"
+        Mode: =TextMode.Password
+        X: =868
+        Y: =299
+        ZIndex: =4
+
+    btn_validateUser As button:
+        OnSelect: |
+            =If(IsBlank(LookUp(hnoLoginUsers, hnoUsername=txtInputUsername.Text And hnoUserPassword=txtInputPassword.Text)),
+            Notify("Passwort falsch.",NotificationType.Error),
+            Set(userRole,Text(LookUp(hnoLoginUsers,hnoUsername=txtInputUsername.Text).hnoUserRole));
+            Navigate(startScreen))
+        Text: ="Login"
+        X: =948
+        Y: =463
+        ZIndex: =5
+
+    label_pwInfo As label:
+        Align: =Align.Center
+        Height: =45
+        Text: ="Passwort vergessen? Bitte Admin kontaktieren"
+        Width: =355
+        X: =851
+        Y: =551
+        ZIndex: =6
+
+    img_loginScreen As image:
+        Height: =712
+        Image: =Nurse
+        Width: =644
+        X: =20
+        Y: =28
+        ZIndex: =7
+
+    btn_cheatButton As button:
+        OnSelect: =Navigate(startScreen)
+        Text: ="CheatButton"
+        X: =948
+        Y: =700
+        ZIndex: =8
+
+    btn_register As button:
+        OnSelect: =Navigate(registerAsNewUser)
+        Text: ="Registrieren"
+        X: =948
+        Y: =628
+        ZIndex: =9
+

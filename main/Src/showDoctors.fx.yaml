@@ -1,0 +1,109 @@
+"showDoctors As screen.'tabletLayout_HeaderAndGallery_ver3.0'":
+
+    RectQuickActionBar4 As rectangle:
+        Height: =64
+        Width: =Parent.Width
+        ZIndex: =1
+
+    title_showDoctors As label:
+        Align: =Align.Center
+        Height: =64
+        PaddingRight: =10
+        Text: ="Unser Team"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    "GalleryDoctorsView As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =624
+        Items: =Search(hnoStaff, SearchBoxDoctorsView.Text, "cr6bf_name", "cr6bf_staffsurname", "cr6bf_staffspezialisation")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =Parent.Width
+        Y: =144
+        ZIndex: =3
+
+        Image6 As image:
+            Height: =128
+            Image: =ThisItem.staffImg
+            OnSelect: =Select(Parent)
+            Transparency: =
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title12 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.staffName & " " & ThisItem.staffSurname
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image6.Width - 104
+            X: =Image6.X + Image6.Width + 24
+            Y: =32
+            ZIndex: =2
+
+        Subtitle6 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.staffSpezialisation
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title12.Width
+            X: =Title12.X
+            Y: =Title12.Y + Title12.Height + 4
+            ZIndex: =3
+
+        Separator6 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Subtitle6_3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.staffOffice
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title12.Width
+            X: =Title12.X
+            Y: =112
+            ZIndex: =6
+
+    icon_back_showDoctors As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =47
+        X: =16
+        Y: =6
+        ZIndex: =4
+
+    icon_search_showDoctors As icon.Search:
+        Icon: =Icon.Search
+        X: =16
+        Y: =80
+        ZIndex: =5
+
+    SearchBoxDoctorsView As text:
+        Default: =""
+        Height: =64
+        HintText: ="Mitarbeiter suchen"
+        Width: =1244
+        X: =106
+        Y: =80
+        ZIndex: =6
+

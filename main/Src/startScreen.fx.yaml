@@ -1,0 +1,143 @@
+startScreen As screen:
+    OnVisible: |-
+        =Collect(Collection1, {Image: img_doctor_startScreen.Image})
+
+    Container1 As groupContainer.manualLayoutContainer:
+        Height: =248
+        Width: =1366
+        ZIndex: =1
+
+        Image3 As image:
+            Height: =248
+            Image: ='pexels-negative-space-48604'
+            ImagePosition: =ImagePosition.Fill
+            Width: =1366
+            ZIndex: =2
+
+    btn_showStaff_StartScreen As button:
+        Height: =60
+        OnSelect: =Navigate(showDoctors)
+        Text: ="Unsere Ärzte"
+        Width: =204
+        X: =159
+        Y: =507
+        ZIndex: =2
+
+    btn_showOffices_startScreen As button:
+        Height: =60
+        OnSelect: =Navigate(showOffices)
+        Text: ="Unsere Standorte"
+        Width: =232
+        X: =566
+        Y: =507
+        ZIndex: =3
+
+    btn_editStaff_startScreen As button:
+        Height: =60
+        OnSelect: =Navigate(createStaff)
+        Text: ="Ärzte bearbeiten"
+        Visible: =If(userRole="Administrator",true,false)
+        Width: =204
+        X: =159
+        Y: =587
+        ZIndex: =4
+
+    btn_editOffices_startScreen As button:
+        Height: =60
+        OnSelect: =Navigate(createOffice)
+        Text: ="Standorte bearbeiten"
+        Visible: =If(userRole="Administrator",true,false)
+        Width: =204
+        X: =581
+        Y: =587
+        ZIndex: =5
+
+    btn_newBooking_startScreen As button:
+        Height: =60
+        OnSelect: =Navigate(bookingSelectOffice)
+        Text: ="Jetzt Termin vereinbaren"
+        Visible: =If(toggle_changeUserRole.Value = false,true,false)
+        Width: =231
+        X: =869
+        Y: =507
+        ZIndex: =6
+
+    btn_viewBookings_startScreen As button:
+        Height: =60
+        OnSelect: =Navigate(bookingOverview)
+        Text: ="Buchungen einsehen"
+        Visible: =If(userRole="Administrator",false,true)
+        Width: =232
+        X: =1123
+        Y: =507
+        ZIndex: =7
+
+    img_doctor_startScreen As image:
+        Height: =226
+        Image: =Doctor
+        Width: =344
+        X: =89
+        Y: =269
+        ZIndex: =8
+
+    img_location_startScreen As image:
+        Height: =226
+        Image: =Share
+        Width: =192
+        X: =587
+        Y: =264
+        ZIndex: =9
+
+    img_calendar_startScreen As image:
+        Height: =226
+        Image: =Calendar
+        Width: =351
+        X: =955
+        Y: =264
+        ZIndex: =10
+
+    btn_AdminviewBookings_startScreen As button:
+        Height: =60
+        OnSelect: =Navigate(bookingAdminOverview)
+        Text: ="Buchungen einsehen"
+        Visible: =toggle_changeUserRole
+        Width: =232
+        X: =1014
+        Y: =587
+        ZIndex: =11
+
+    toggle_changeUserRole As toggleSwitch:
+        Default: =If(userRole="Administrator",true,false)
+        FalseText: ="Benutzeransicht"
+        Height: =33
+        OnChange: =
+        OnCheck: =Set(userRole,"Administrator")
+        OnUncheck: =Set(userRole,"User")
+        TextPosition: =TextPosition.Left
+        TrueText: ="Adminansicht"
+        Width: =232
+        X: =1084
+        Y: =12
+        ZIndex: =12
+
+    Label2 As label:
+        Align: =Align.Center
+        Fill: =RGBA(230, 230, 230, 1)
+        Height: =125
+        Size: =30
+        Text: ="Praxis Dr. Chronisch & Kollegen"
+        Width: =464
+        X: =472
+        Y: =60
+        ZIndex: =13
+
+    btn_editAdmins_startScreen As button:
+        Height: =60
+        OnSelect: =Navigate(editAdminUser)
+        Text: ="Admins verwalten"
+        Visible: =If(userRole="Administrator",true,false)
+        Width: =178
+        X: =1150
+        Y: =60
+        ZIndex: =15
+

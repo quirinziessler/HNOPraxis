@@ -1,0 +1,104 @@
+[
+  {
+    "DisplayName": "hnoBookings (Views)",
+    "Name": "_cr6bf_hnobookings_views",
+    "RelatedEntityName": "hnoBookings",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "02421920-97ae-4a39-b44e-34fa8fb11949": "Inaktive hnoBookings",
+      "655f1d70-023b-41b9-a5e5-94a77e154be3": "hnoBookings Zugeordnete Ansicht",
+      "bdd8ce79-299e-4b25-9097-62fb7c61edc0": "Aktive hnoBookings",
+      "e3bb0c92-a19b-4f75-83bd-98637b5584d3": "hnoBookings Ansicht für die erweiterte Suche",
+      "e9dd8bb9-696a-48c0-9f1d-33c3443a1c7f": "hnoBookings Suchansicht"
+    }
+  },
+  {
+    "DisplayName": "Status (hnoBookings)",
+    "Name": "cr6bf_hnobookings_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Aktiv",
+      "1": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "hnoBookings"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "hnoBookings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusgrund (hnoBookings)",
+    "Name": "cr6bf_hnobookings_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Aktiv",
+      "2": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "hnoBookings"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "hnoBookings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6bf_hnobookingses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6bf_hnobookings",
+    "MaxGetRowsCount": 500,
+    "Name": "hnoBookings",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Besitzer",
+      "{Attachments}": "Attachments",
+      "cr6bf_hnobooking": "hnoBookingDescription",
+      "cr6bf_hnobookingdateandtime": "hnoBookingStartDateAndTime",
+      "cr6bf_hnobookingenddateandtime": "hnoBookingEndDateAndTime",
+      "cr6bf_hnobookings_Annotations": "Notizen",
+      "cr6bf_hnobookings_AsyncOperations": "Systemaufträge",
+      "cr6bf_hnobookings_BulkDeleteFailures": "Massenlöschungsfehler",
+      "cr6bf_hnobookings_DuplicateBaseRecord": "Doppelte Datensätze (cr6bf_hnobookings_DuplicateBaseRecord)",
+      "cr6bf_hnobookings_DuplicateMatchingRecord": "Doppelte Datensätze (cr6bf_hnobookings_DuplicateMatchingRecord)",
+      "cr6bf_hnobookings_MailboxTrackingFolders": "Automatisch nachverfolgte Postfachordner",
+      "cr6bf_hnobookings_PrincipalObjectAttributeAccesses": "Sicherer Feldzugriff",
+      "cr6bf_hnobookings_ProcessSession": "Prozesssitzungen",
+      "cr6bf_hnobookings_SyncErrors": "Synchronisierungsfehler",
+      "cr6bf_hnobookingsid": "hnoBookings",
+      "cr6bf_hnobookingslotid": "hnoBookingSlotID",
+      "cr6bf_hnodoctor": "hnoDoctor",
+      "cr6bf_hnouser": "hnoPatient",
+      "createdby": "Erstellt von",
+      "createdon": "Erstellt am",
+      "createdonbehalfby": "Erstellt von (Stellvertreter)",
+      "importsequencenumber": "Importsequenznummer",
+      "modifiedby": "Geändert von",
+      "modifiedon": "Geändert am",
+      "modifiedonbehalfby": "Geändert von (Stellvertreter)",
+      "overriddencreatedon": "Datensatz erstellt am",
+      "owningbusinessunit": "Besitzer (Unternehmenseinheit)",
+      "owningteam": "Besitzer (Team)",
+      "owninguser": "Besitzer (Benutzer)",
+      "statecode": "Status",
+      "statuscode": "Statusgrund",
+      "timezoneruleversionnumber": "Versionsnummer der Zeitzonenregel",
+      "utcconversiontimezonecode": "Zeitzonencode für die UTC-Konvertierung",
+      "versionnumber": "Versionsnummer"
+    },
+    "PreferredName": "hnoBookings",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

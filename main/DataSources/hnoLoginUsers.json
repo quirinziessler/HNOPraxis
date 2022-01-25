@@ -1,0 +1,119 @@
+[
+  {
+    "DisplayName": "hnoLoginUsers (Views)",
+    "Name": "_cr6bf_hnologinuser_views",
+    "RelatedEntityName": "hnoLoginUsers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "14d6153c-96fa-409d-a480-84b65da06de7": "hnoLoginUser Ansicht für die erweiterte Suche",
+      "5925285a-e1f7-4934-91b5-e6c15a15fb7d": "Inaktive hnoLoginUsers",
+      "8d764918-b4d6-413a-b629-f6cc978054d3": "hnoLoginUser Suchansicht",
+      "8f1768c7-8e21-490e-8073-f891caa3c433": "hnoLoginUser Zugeordnete Ansicht",
+      "d1a915b7-32d0-46ee-a49b-ca50847b2ae5": "Aktive hnoLoginUsers"
+    }
+  },
+  {
+    "DisplayName": "Status (hnoLoginUsers)",
+    "Name": "cr6bf_hnologinuser_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Aktiv",
+      "1": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "hnoLoginUsers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "hnoLoginUsers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusgrund (hnoLoginUsers)",
+    "Name": "cr6bf_hnologinuser_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Aktiv",
+      "2": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "hnoLoginUsers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "hnoLoginUsers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "hnoUserRoles",
+    "Name": "cr6bf_hnouserroles",
+    "OptionSetInfoNameMapping": {
+      "870060000": "Administrator",
+      "870060001": "User"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr6bf_hnouserrole",
+        "OptionSetReferenceEntityName": "hnoLoginUsers"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr6bf_hnouserrole",
+    "RelatedEntityName": "hnoLoginUsers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6bf_hnologinusers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6bf_hnologinuser",
+    "MaxGetRowsCount": 500,
+    "Name": "hnoLoginUsers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Besitzer",
+      "cr6bf_hnologinuser_AsyncOperations": "Systemaufträge",
+      "cr6bf_hnologinuser_BulkDeleteFailures": "Massenlöschungsfehler",
+      "cr6bf_hnologinuser_DuplicateBaseRecord": "Doppelte Datensätze (cr6bf_hnologinuser_DuplicateBaseRecord)",
+      "cr6bf_hnologinuser_DuplicateMatchingRecord": "Doppelte Datensätze (cr6bf_hnologinuser_DuplicateMatchingRecord)",
+      "cr6bf_hnologinuser_MailboxTrackingFolders": "Automatisch nachverfolgte Postfachordner",
+      "cr6bf_hnologinuser_PrincipalObjectAttributeAccesses": "Sicherer Feldzugriff",
+      "cr6bf_hnologinuser_ProcessSession": "Prozesssitzungen",
+      "cr6bf_hnologinuser_SyncErrors": "Synchronisierungsfehler",
+      "cr6bf_hnologinuserid": "hnoLoginUser",
+      "cr6bf_hnousername": "hnoUsername",
+      "cr6bf_hnouserpassword": "hnoUserPassword",
+      "cr6bf_hnouserrole": "hnoUserRole",
+      "createdby": "Erstellt von",
+      "createdon": "Erstellt am",
+      "createdonbehalfby": "Erstellt von (Stellvertreter)",
+      "importsequencenumber": "Importsequenznummer",
+      "modifiedby": "Geändert von",
+      "modifiedon": "Geändert am",
+      "modifiedonbehalfby": "Geändert von (Stellvertreter)",
+      "overriddencreatedon": "Datensatz erstellt am",
+      "owningbusinessunit": "Besitzer (Unternehmenseinheit)",
+      "owningteam": "Besitzer (Team)",
+      "owninguser": "Besitzer (Benutzer)",
+      "statecode": "Status",
+      "statuscode": "Statusgrund",
+      "timezoneruleversionnumber": "Versionsnummer der Zeitzonenregel",
+      "utcconversiontimezonecode": "Zeitzonencode für die UTC-Konvertierung",
+      "versionnumber": "Versionsnummer"
+    },
+    "PreferredName": "hnoLoginUsers",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

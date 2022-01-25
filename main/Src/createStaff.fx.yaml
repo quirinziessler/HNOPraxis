@@ -1,0 +1,529 @@
+"createStaff As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    "gallery_offices_createStaff As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =183
+        Items: =hnoOffices
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =62
+        Width: =487
+        X: =622
+        Y: =585
+        ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.officetitle
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Separator5 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+    title_createStaff As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="Neuen Mitarbeiter anlegen"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    btn_reset_createStaff As button:
+        Height: =72
+        OnSelect: =ResetForm(createStaffForm)
+        Text: ="Felder zurücksetzen"
+        Width: =218
+        X: =1124
+        Y: =676
+        ZIndex: =4
+
+    btn_create_createStaff As button:
+        Height: =70
+        OnSelect: =SubmitForm(createStaffForm)
+        Text: ="Neuen Mitarbeiter anlegen"
+        Width: =218
+        X: =1124
+        Y: =585
+        ZIndex: =5
+
+    createStaffForm As form:
+        DataSource: =hnoStaff
+        DefaultMode: =FormMode.New
+        Height: =495
+        NumberOfColumns: =2
+        OnFailure: =Notify("Fehler beim anlegen", NotificationType.Error)
+        OnReset: =
+        OnSuccess: =Notify("Neuer Mitarbeiter angelegt", NotificationType.Success)
+        Width: =742
+        X: =622
+        Y: =90
+        ZIndex: =6
+
+        staffSurname_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr6bf_staffsurname"
+            Default: =ThisItem.staffSurname
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: ="Nachname"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@hnoStaff], DataSourceInfo.MaxLength, "cr6bf_staffsurname")
+            Required: =true
+            Update: =DataCardValue3.Text
+            Width: =371
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
+                ZIndex: =4
+
+        staffSpezialisation_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr6bf_staffspezialisation"
+            Default: =ThisItem.staffSpezialisation
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: ="Spezialisierung"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =111
+            MaxLength: =DataSourceInfo([@hnoStaff], DataSourceInfo.MaxLength, "cr6bf_staffspezialisation")
+            Required: =true
+            Update: =DataCardValue4.Text
+            Width: =371
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey4.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+        staffImg_DataCard1 As typedDataCard.addLargePictureCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr6bf_staffimg"
+            Default: =ThisItem.staffImg
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: ="Profilbild"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Image5.Image
+            Width: =371
+            X: =1
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            Image5 As image:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =AddPicture2.Height
+                Image: =If(IsBlank(AddPicture2.Media), Parent.Default, AddPicture2.Media)
+                Tooltip: =Parent.DisplayName
+                Width: =AddPicture2.Width
+                X: =AddPicture2.X
+                Y: =AddPicture2.Y
+                ZIndex: =2
+
+            AddPicture2 As addMedia:
+                Height: =200
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =3
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =Image5.Y + Image5.Height
+                ZIndex: =4
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey5.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey5.Y
+                ZIndex: =5
+
+        staffOffice_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr6bf_staffoffice"
+            Default: =ThisItem.staffOffice
+            DisplayMode: =DisplayMode.Disabled
+            DisplayName: ="Standort"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@hnoStaff], DataSourceInfo.MaxLength, "cr6bf_staffoffice")
+            Required: =false
+            Update: =DataCardValue2.Text
+            Width: =371
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =gallery_offices_createStaff.Selected.officetitle
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                ZIndex: =2
+
+            ErrorMessage5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue2.Y + DataCardValue2.Height
+                ZIndex: =3
+
+            StarVisible5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey2.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey2.Y
+                ZIndex: =4
+
+        staffName_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr6bf_name"
+            Default: =ThisItem.staffName
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: ="Vorname"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@hnoStaff], DataSourceInfo.MaxLength, "cr6bf_name")
+            Required: =true
+            Update: =DataCardValue1.Text
+            Width: =371
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+    "createStaffGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =602
+        Items: =Search(hnoStaff, SearchBoxCreateStaff.Text, "cr6bf_name", "cr6bf_staffsurname", "cr6bf_staffspezialisation")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =608
+        Y: =166
+        ZIndex: =7
+
+        Image6_1 As image:
+            Height: =88
+            Image: =ThisItem.staffImg
+            OnSelect: =Select(Parent)
+            Transparency: =
+            Width: =108
+            X: =14
+            Y: =16
+            ZIndex: =1
+
+        Title12_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.staffName & " " & ThisItem.staffSurname
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image6_1.Width - 104
+            X: =Image6_1.X + Image6_1.Width + 24
+            Y: =32
+            ZIndex: =2
+
+        Subtitle6_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.staffSpezialisation
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title12_1.Width
+            X: =Title12_1.X
+            Y: =Title12_1.Y + Title12_1.Height + 4
+            ZIndex: =3
+
+        Separator6_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Icon1 As icon.Trash:
+            Height: =43
+            Icon: =Icon.Trash
+            OnSelect: =Remove(hnoStaff,ThisItem)
+            Width: =46
+            X: =14
+            Y: =110
+            ZIndex: =6
+
+        Icon2 As icon.Edit:
+            Icon: =Icon.Edit
+            OnSelect: =Navigate(editStaff, None)
+            X: =530
+            Y: =56
+            ZIndex: =7
+
+    icon_back_createStaff As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Icon: =Icon.BackArrow
+        OnSelect: =Back() & ResetForm(createStaffForm)
+        Width: =47
+        X: =14
+        Y: =18
+        ZIndex: =8
+
+    SearchBoxCreateStaff As text:
+        Default: =""
+        Height: =65
+        HintText: ="Mitarbeiter suchen"
+        Width: =511
+        X: =97
+        Y: =101
+        ZIndex: =9
+
+    icon_search_createStaff As icon.Search:
+        Icon: =Icon.Search
+        X: =14
+        Y: =101
+        ZIndex: =10
+

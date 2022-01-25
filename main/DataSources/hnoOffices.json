@@ -1,0 +1,107 @@
+[
+  {
+    "DisplayName": "hnoOffices (Views)",
+    "Name": "_cr6bf_hnooffices_views",
+    "RelatedEntityName": "hnoOffices",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "352f85d1-80a7-4428-9f95-9f330197e9c8": "Inaktive hnoOffices",
+      "384e5dad-5f45-4424-b958-3a480014060b": "hnoOffices Zugeordnete Ansicht",
+      "738be1a7-20ee-4982-9484-c8347f01d178": "hnoOffices Suchansicht",
+      "9c0f3a3b-31fc-405b-af66-cf789132fca0": "hnoOffices Ansicht für die erweiterte Suche",
+      "d732eec2-a5e4-4ec9-8b7d-67b4518447ec": "Aktive hnoOffices"
+    }
+  },
+  {
+    "DisplayName": "Status (hnoOffices)",
+    "Name": "cr6bf_hnooffices_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Aktiv",
+      "1": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "hnoOffices"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "hnoOffices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusgrund (hnoOffices)",
+    "Name": "cr6bf_hnooffices_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Aktiv",
+      "2": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "hnoOffices"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "hnoOffices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6bf_hnoofficeses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6bf_hnooffices",
+    "MaxGetRowsCount": 500,
+    "Name": "hnoOffices",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Besitzer",
+      "{Attachments}": "Attachments",
+      "cr6bf_adress": "officestreet",
+      "cr6bf_hnooffices": "officetitle",
+      "cr6bf_hnooffices_Annotations": "Notizen",
+      "cr6bf_hnooffices_AsyncOperations": "Systemaufträge",
+      "cr6bf_hnooffices_BulkDeleteFailures": "Massenlöschungsfehler",
+      "cr6bf_hnooffices_DuplicateBaseRecord": "Doppelte Datensätze (cr6bf_hnooffices_DuplicateBaseRecord)",
+      "cr6bf_hnooffices_DuplicateMatchingRecord": "Doppelte Datensätze (cr6bf_hnooffices_DuplicateMatchingRecord)",
+      "cr6bf_hnooffices_MailboxTrackingFolders": "Automatisch nachverfolgte Postfachordner",
+      "cr6bf_hnooffices_PrincipalObjectAttributeAccesses": "Sicherer Feldzugriff",
+      "cr6bf_hnooffices_ProcessSession": "Prozesssitzungen",
+      "cr6bf_hnooffices_SyncErrors": "Synchronisierungsfehler",
+      "cr6bf_hnoofficesid": "hnoOffices",
+      "cr6bf_officecity": "officecity",
+      "cr6bf_officedescription": "officedescription",
+      "cr6bf_officeimg": "officeimg",
+      "cr6bf_officeimgid": "cr6bf_officeimgId",
+      "cr6bf_officelat": "officelat",
+      "cr6bf_officelong": "officelong",
+      "cr6bf_officepostalcode": "officepostalcode",
+      "createdby": "Erstellt von",
+      "createdon": "Erstellt am",
+      "createdonbehalfby": "Erstellt von (Stellvertreter)",
+      "importsequencenumber": "Importsequenznummer",
+      "modifiedby": "Geändert von",
+      "modifiedon": "Geändert am",
+      "modifiedonbehalfby": "Geändert von (Stellvertreter)",
+      "overriddencreatedon": "Datensatz erstellt am",
+      "owningbusinessunit": "Besitzer (Unternehmenseinheit)",
+      "owningteam": "Besitzer (Team)",
+      "owninguser": "Besitzer (Benutzer)",
+      "statecode": "Status",
+      "statuscode": "Statusgrund",
+      "timezoneruleversionnumber": "Versionsnummer der Zeitzonenregel",
+      "utcconversiontimezonecode": "Zeitzonencode für die UTC-Konvertierung",
+      "versionnumber": "Versionsnummer"
+    },
+    "PreferredName": "hnoOffices",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

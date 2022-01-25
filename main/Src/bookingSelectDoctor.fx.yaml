@@ -1,0 +1,86 @@
+"bookingSelectDoctor As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar2_1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    title_bookingSelectDoctor As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="Termin ausmachen - Arzt auswählen"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    icon_back_bookingSelectDoctor As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =47
+        X: =16
+        Y: =18
+        ZIndex: =4
+
+    "gallery_bookingSelectDoctor As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =680
+        Items: =Search(hnoStaff, gallery_offices_bookingSelectOffice.Selected.officetitle, "cr6bf_staffoffice")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =1366
+        Y: =88
+        ZIndex: =5
+
+        Image6_2 As image:
+            Height: =130
+            Image: =ThisItem.staffImg
+            OnSelect: =Select(Parent)
+            Transparency: =
+            Width: =150
+            X: =19
+            Y: =18
+            ZIndex: =1
+
+        Title12_2 As label:
+            Height: =38
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.staffName & " " & ThisItem.staffSurname
+            VerticalAlign: =VerticalAlign.Top
+            Width: =1078
+            X: =183
+            Y: =18
+            ZIndex: =2
+
+        Subtitle6_2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.staffSpezialisation
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title12_2.Width
+            X: =183
+            Y: =66
+            ZIndex: =3
+
+        Separator6_2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Icon2_1 As icon.Edit:
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent);Navigate(bookingSelectDate)
+            X: =1261
+            Y: =56
+            ZIndex: =7
+

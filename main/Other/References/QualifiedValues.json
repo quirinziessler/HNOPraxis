@@ -1,0 +1,49 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr6bf_hnooffices_forms",
+      "Namespace": "hnoOffices (Forms)",
+      "Values": {
+        "Informationen": "d58c80ca-f21a-432f-8bd1-d48e898c620a"
+      }
+    },
+    {
+      "Kind": "default.cds_organization_forms",
+      "Namespace": "Organizations (Forms)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr6bf_hnostaff_forms",
+      "Namespace": "hnoStaff (Forms)",
+      "Values": {
+        "Informationen": "9828ed8b-6cdc-4bfc-b0ca-a919a36f11f6"
+      }
+    },
+    {
+      "Kind": "default.cds_cr6bf_hnobookings_forms",
+      "Namespace": "hnoBookings (Forms)",
+      "Values": {
+        "Informationen": "6c25273f-821e-4565-845f-ee741516e382"
+      }
+    },
+    {
+      "Kind": "default.cds_cr6bf_hnotimeslots_forms",
+      "Namespace": "hnoTimeSlots (Forms)",
+      "Values": {
+        "Informationen": "b1a929ad-af4d-40de-a6fe-d793c3edd4a7"
+      }
+    },
+    {
+      "Kind": "default.cds_cr6bf_hnologinuser_forms",
+      "Namespace": "hnoLoginUsers (Forms)",
+      "Values": {
+        "Informationen": "7dd742b6-55a6-4efc-b16f-f74665d5f352"
+      }
+    },
+    {
+      "Kind": "default.cds_duplicaterecord_forms",
+      "Namespace": "Doppelte Datensätze (Forms)",
+      "Values": {}
+    }
+  ]
+}

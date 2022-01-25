@@ -1,0 +1,178 @@
+"registerAsNewUser As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar7_1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    title_createNewAdminUser_1 As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="Neuen Benutzeraccount anlegen"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    icon_back_createNewAdminUser_1 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Icon: =Icon.BackArrow
+        OnSelect: =Back();ResetForm(form_registerAsNewUser)
+        Width: =47
+        X: =16
+        Y: =18
+        ZIndex: =4
+
+    btn_submit_newAdminUser_1 As button:
+        Height: =76
+        OnSelect: =If(IsBlank(LookUp(hnoLoginUsers, hnoUsername=DataCardValue20.Text)),SubmitForm(form_registerAsNewUser),Notify("Benutzer existiert bereits, bitte anderen Benutzernamen wählen",Error))
+        Text: ="Neuen Benutzer anlegen"
+        Width: =264
+        X: =1080
+        Y: =654
+        ZIndex: =6
+
+    form_registerAsNewUser As form:
+        DataSource: =hnoLoginUsers
+        NumberOfColumns: =1
+        OnSuccess: =Navigate(loginScreen);ResetForm(form_registerAsNewUser)
+        Width: =1366
+        Y: =95
+        ZIndex: =7
+
+        hnoUserPassword_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr6bf_hnouserpassword"
+            Default: =ThisItem.hnoUserPassword
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: ="Passwort"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@hnoLoginUsers], DataSourceInfo.MaxLength, "cr6bf_hnouserpassword")
+            Required: =true
+            Update: =DataCardValue22.Text
+            Width: =1366
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey26 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue22 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                Mode: =TextMode.Password
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey26.Y + DataCardKey26.Height + 5
+                ZIndex: =2
+
+            ErrorMessage24 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue22.Y + DataCardValue22.Height
+                ZIndex: =3
+
+            StarVisible24 As label:
+                Align: =Align.Center
+                Height: =DataCardKey26.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey26.Y
+                ZIndex: =4
+
+        hnoUsername_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr6bf_hnousername"
+            Default: =ThisItem.hnoUsername
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: ="Benutzername"
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@hnoLoginUsers], DataSourceInfo.MaxLength, "cr6bf_hnousername")
+            Required: =true
+            Update: =DataCardValue20.Text
+            Width: =1366
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey24 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue20 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey24.Y + DataCardKey24.Height + 5
+                ZIndex: =2
+
+            ErrorMessage23 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue20.Y + DataCardValue20.Height
+                ZIndex: =3
+
+            StarVisible23 As label:
+                Align: =Align.Center
+                Height: =DataCardKey24.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey24.Y
+                ZIndex: =4
+

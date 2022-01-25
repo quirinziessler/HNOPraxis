@@ -1,0 +1,45 @@
+{
+  "1098f47f-8350-4a88-ab8a-dc73b2cefcc6": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices/connections/a194d8dd42a541199abd286401f10e89",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Premium",
+      "displayName": "Spatial Services",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1539/1.0.1539.2620/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "SpatialServices"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1098f47f-8350-4a88-ab8a-dc73b2cefcc6"
+  },
+  "2c664d0e-600c-4993-b9a6-c2ff5511f2d0": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/1d47769ac7804730a9813005156e4032",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1542/1.0.1542.2635/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365-Benutzer",
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2c664d0e-600c-4993-b9a6-c2ff5511f2d0"
+  }
+}

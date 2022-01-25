@@ -1,0 +1,47 @@
+"bookingSuccess As screen.'tabletLayout_Success_ver3.0'":
+
+    icon_circle_bookingSuccess As circle.Circle:
+        X: =639
+        Y: =450
+        ZIndex: =1
+
+    icon_check_bookingSuccess As icon.Check:
+        Height: =icon_circle_bookingSuccess.Height
+        Icon: =Icon.Check
+        PaddingBottom: =Self.PaddingTop
+        PaddingLeft: =Self.PaddingTop
+        PaddingRight: =Self.PaddingTop
+        PaddingTop: =24
+        Width: =icon_circle_bookingSuccess.Width
+        X: =639
+        Y: =450
+        ZIndex: =2
+
+    txt_success_bookingSuccess As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Height: =icon_circle_bookingSuccess.Height
+        Size: =20
+        Text: ="Buchung wurde bestätigt."
+        Width: =Parent.Width * 0.75
+        X: =177
+        Y: =574
+        ZIndex: =3
+
+    img_calendar_bookingSuccess As image:
+        Height: =380
+        Image: =Calendar
+        Width: =648
+        X: =365
+        Y: =25
+        ZIndex: =4
+
+    btn_back_bookingSuccess As button:
+        Height: =38
+        OnSelect: =Navigate(startScreen)
+        Text: ="Zurück zur Startseite"
+        Width: =276
+        X: =551
+        Y: =666
+        ZIndex: =5
+

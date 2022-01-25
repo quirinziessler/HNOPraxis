@@ -1,0 +1,30 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "duplicaterecords",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "duplicaterecord",
+    "MaxGetRowsCount": 500,
+    "Name": "Doppelte Datensätze",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_baserecordid_value": "Basisdatensatz-ID",
+      "_duplicaterecordid_value": "ID des doppelten Datensatzes",
+      "asyncoperationid": "Systemauftrag",
+      "createdon": "CreatedOn",
+      "duplicateid": "DuplicateId",
+      "duplicateruleid": "DuplicateRuleId"
+    },
+    "PreferredName": "Doppelte Datensätze",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Doppelte Datensätze (Views)",
+    "Name": "_duplicaterecord_views",
+    "RelatedEntityName": "Doppelte Datensätze",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {}
+  }
+]

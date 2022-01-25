@@ -1,0 +1,140 @@
+"showOfficeDetail As screen.'tabletLayout_HeaderAndGallery_ver3.0'":
+
+    Image7 As image:
+        DisplayMode: =DisplayMode.View
+        Height: =290
+        Image: =gallery_showOffices.Selected.officeimg.Full
+        Width: =734
+        X: =592
+        Y: =79
+        ZIndex: =1
+
+    txt_OfficeDetail_officeTitle As label:
+        FontWeight: =FontWeight.Bold
+        Height: =74
+        Size: =24
+        Text: =gallery_showOffices.Selected.officetitle
+        Width: =756
+        X: =592
+        Y: =369
+        ZIndex: =2
+
+    txt_OfficeDetail_address As label:
+        Height: =57
+        Text: =gallery_showOffices.Selected.officestreet & ", " & gallery_showOffices.Selected.officepostalcode & " " & gallery_showOffices.Selected.officecity
+        Width: =734
+        X: =592
+        Y: =429
+        ZIndex: =3
+
+    txt_OfficeDetail_labelDescription As label:
+        FontWeight: =FontWeight.Bold
+        Text: ="Beschreibung"
+        X: =592
+        Y: =486
+        ZIndex: =4
+
+    txt_OfficeDetail_description As label:
+        Height: =176
+        Text: =gallery_showOffices.Selected.officedescription
+        VerticalAlign: =VerticalAlign.Top
+        Width: =690
+        X: =636
+        Y: =526
+        ZIndex: =5
+
+    RectQuickActionBar5_1 As rectangle:
+        Height: =64
+        Width: =Parent.Width
+        ZIndex: =6
+
+    title_showOfficeDetail As label:
+        Align: =Align.Center
+        Height: =64
+        PaddingRight: =10
+        Text: ="Praxis " & gallery_showOffices.Selected.officetitle
+        Width: =Parent.Width
+        ZIndex: =7
+
+    "map_showOfficeDetail As 'Map (preview)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DefaultLocation: =false
+        DisplayMode: =DisplayMode.View
+        Height: =If(tog_FullScreen_showOfficeDetail.Value, App.Height, 704)
+        InfoCards: ='''Microsoft.Map.InfoCards'''.OnClick
+        Items: =gallery_showOffices.Selected
+        ItemsAddresses: ="cr6bf_adress"
+        ItemsLabels: ="cr6bf_hnooffices"
+        ItemsLatitudes: ="cr6bf_officelat"
+        ItemsLongitudes: ="cr6bf_officelong"
+        OnSelect: =false
+        PinColor: =RGBA(29, 114, 169, 1)
+        SatelliteView: =tog_SatelliteView_showOfficeDetail.Value
+        Width: =If(tog_FullScreen_showOfficeDetail.Value, App.Width, 568)
+        X: =0
+        Y: =64
+        ZIndex: =8
+
+        officetitle1_1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Name"
+            FieldName: ="cr6bf_hnooffices"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =7
+
+        officedescription1_1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Beschreibung"
+            FieldName: ="cr6bf_officedescription"
+            FieldVariantName: ="textualColumn"
+            Order: =2
+            ZIndex: =8
+
+        officestreet1_1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Straße"
+            FieldName: ="cr6bf_adress"
+            FieldVariantName: ="textualColumn"
+            Order: =3
+            ZIndex: =9
+
+        officepostalcode1_1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Postleitzahl"
+            FieldName: ="cr6bf_officepostalcode"
+            FieldVariantName: ="textualColumn"
+            Order: =4
+            ZIndex: =10
+
+        officecity1_1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Stadt"
+            FieldName: ="cr6bf_officecity"
+            FieldVariantName: ="textualColumn"
+            Order: =5
+            ZIndex: =11
+
+    icon_back_showOfficeDetail As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =47
+        X: =16
+        Y: =6
+        ZIndex: =9
+
+    tog_SatelliteView_showOfficeDetail As toggleSwitch:
+        FalseText: ="Kartenansicht"
+        Height: =24
+        TrueText: ="Satellitenansicht"
+        Width: =205
+        X: =249
+        Y: =79
+        ZIndex: =10
+
+    tog_FullScreen_showOfficeDetail As toggleSwitch:
+        FalseText: ="Karte maximieren"
+        Height: =24
+        TrueText: ="Karte minimieren"
+        Width: =205
+        X: =16
+        Y: =79
+        ZIndex: =11
+

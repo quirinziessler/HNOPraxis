@@ -1,0 +1,105 @@
+[
+  {
+    "DisplayName": "hnoStaff (Views)",
+    "Name": "_cr6bf_hnostaff_views",
+    "RelatedEntityName": "hnoStaff",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "100c8bf8-132c-4e15-9e37-b9ff79844cbf": "Inaktive hnoStaff",
+      "190260db-5b6d-ec11-8943-000d3adc9880": "portal_view",
+      "57e94355-9c7d-4e60-bd63-790dc988d850": "hnoStaff Suchansicht",
+      "744bc149-270f-4249-93da-f81438df1d8e": "hnoStaff Ansicht für die erweiterte Suche",
+      "7593ac7d-09f6-42c4-8958-102fa65d7631": "hnoStaff Zugeordnete Ansicht",
+      "a1fdd459-9c15-478c-a3d3-bc602a9c53ef": "Aktive hnoStaff"
+    }
+  },
+  {
+    "DisplayName": "Status (hnoStaff)",
+    "Name": "cr6bf_hnostaff_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Aktiv",
+      "1": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "hnoStaff"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "hnoStaff",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Statusgrund (hnoStaff)",
+    "Name": "cr6bf_hnostaff_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Aktiv",
+      "2": "Inaktiv"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "hnoStaff"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "hnoStaff",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6bf_hnostaffs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6bf_hnostaff",
+    "MaxGetRowsCount": 500,
+    "Name": "hnoStaff",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Besitzer",
+      "{Attachments}": "Attachments",
+      "cr6bf_hnostaff_Annotations": "Notizen",
+      "cr6bf_hnostaff_AsyncOperations": "Systemaufträge",
+      "cr6bf_hnostaff_BulkDeleteFailures": "Massenlöschungsfehler",
+      "cr6bf_hnostaff_DuplicateBaseRecord": "Doppelte Datensätze (cr6bf_hnostaff_DuplicateBaseRecord)",
+      "cr6bf_hnostaff_DuplicateMatchingRecord": "Doppelte Datensätze (cr6bf_hnostaff_DuplicateMatchingRecord)",
+      "cr6bf_hnostaff_MailboxTrackingFolders": "Automatisch nachverfolgte Postfachordner",
+      "cr6bf_hnostaff_PrincipalObjectAttributeAccesses": "Sicherer Feldzugriff",
+      "cr6bf_hnostaff_ProcessSession": "Prozesssitzungen",
+      "cr6bf_hnostaff_SyncErrors": "Synchronisierungsfehler",
+      "cr6bf_hnostaffid": "hnoStaff",
+      "cr6bf_name": "staffName",
+      "cr6bf_staffimg": "staffImg",
+      "cr6bf_staffimgid": "cr6bf_staffImgId",
+      "cr6bf_staffoffice": "staffOffice",
+      "cr6bf_staffspezialisation": "staffSpezialisation",
+      "cr6bf_staffsurname": "staffSurname",
+      "createdby": "Erstellt von",
+      "createdon": "Erstellt am",
+      "createdonbehalfby": "Erstellt von (Stellvertreter)",
+      "importsequencenumber": "Importsequenznummer",
+      "modifiedby": "Geändert von",
+      "modifiedon": "Geändert am",
+      "modifiedonbehalfby": "Geändert von (Stellvertreter)",
+      "overriddencreatedon": "Datensatz erstellt am",
+      "owningbusinessunit": "Besitzer (Unternehmenseinheit)",
+      "owningteam": "Besitzer (Team)",
+      "owninguser": "Besitzer (Benutzer)",
+      "statecode": "Status",
+      "statuscode": "Statusgrund",
+      "timezoneruleversionnumber": "Versionsnummer der Zeitzonenregel",
+      "utcconversiontimezonecode": "Zeitzonencode für die UTC-Konvertierung",
+      "versionnumber": "Versionsnummer"
+    },
+    "PreferredName": "hnoStaff",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]
